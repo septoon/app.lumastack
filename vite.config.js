@@ -3,7 +3,14 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      "^/source\\.json$": { target: "https://app.lumastack.ru", changeOrigin: true },
+      "^/android/(latest|history)\\.json$": { target: "https://app.lumastack.ru", changeOrigin: true },
+    },
+  },
   build: {
+    copyPublicDir: false,
     target: "es2020",
     sourcemap: true,
     // Three ships as one tree-shaken ESM module; other vendors are split below.

@@ -1,0 +1,10 @@
+Device artwork used by app.lumastack.ru
+
+iPhone 15 Pro Max Black — polyman / Polyman_3D
+https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Existing project model rendered into a still image with studio lighting and the actual Engineer app screenshot. Screen UV orientation adjusted for the external image.
+
+Google Pixel 9 Pro device artwork — Google, bundled Android Studio device-art-resources/pixel_9_pro/back.webp.
+https://developer.android.com/distribute/marketing-tools/device-art-generator
+Presented at a fixed angle, with a placeholder instead of an Android app screenshot.

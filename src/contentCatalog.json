@@ -1,0 +1,2445 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "title": "Главная",
+      "path": "/",
+      "seoTitle": "Инженер — приложение для выездных инженеров",
+      "seoDescription": "Приложение для iOS и Android: заявки, маршрут, пробег, топливо, аналитика и рабочие инструкции.",
+      "isVisible": true
+    },
+    {
+      "id": "ios",
+      "title": "iOS",
+      "path": "/ios",
+      "seoTitle": "Инженер для iPhone — установка через SideStore",
+      "seoDescription": "Установка приложения Инженер на iPhone, настройка SideStore и источник обновлений.",
+      "isVisible": true
+    },
+    {
+      "id": "android",
+      "title": "Android",
+      "path": "/android",
+      "seoTitle": "Инженер для Android — скачать APK",
+      "seoDescription": "Актуальный APK приложения Инженер: версия, размер, SHA-256 и инструкция установки.",
+      "isVisible": true
+    },
+    {
+      "id": "changelog",
+      "title": "История обновлений",
+      "path": "/changelog",
+      "seoTitle": "Инженер — история обновлений",
+      "seoDescription": "История опубликованных версий Инженер для iOS и Android.",
+      "isVisible": true
+    },
+    {
+      "id": "help",
+      "title": "Помощь",
+      "path": "/help",
+      "seoTitle": "Инженер — помощь с установкой",
+      "seoDescription": "Ответы на вопросы об установке и обновлении Инженер, разрешениях Android и SideStore.",
+      "isVisible": true
+    }
+  ],
+  "sections": [
+    {
+      "id": "shared.header",
+      "pageId": "shared",
+      "title": "Шапка и навигация",
+      "isVisible": true
+    },
+    {
+      "id": "shared.footer",
+      "pageId": "shared",
+      "title": "Подвал",
+      "isVisible": true
+    },
+    {
+      "id": "home.hero",
+      "pageId": "home",
+      "title": "Первый экран",
+      "isVisible": true
+    },
+    {
+      "id": "home.download",
+      "pageId": "home",
+      "title": "Выбор платформы",
+      "isVisible": true
+    },
+    {
+      "id": "home.features",
+      "pageId": "home",
+      "title": "Возможности и скриншоты",
+      "isVisible": true
+    },
+    {
+      "id": "home.workflow",
+      "pageId": "home",
+      "title": "Этапы работы",
+      "isVisible": true
+    },
+    {
+      "id": "home.updates",
+      "pageId": "home",
+      "title": "Последние обновления",
+      "isVisible": true
+    },
+    {
+      "id": "home.cta",
+      "pageId": "home",
+      "title": "Приглашение к установке",
+      "isVisible": true
+    },
+    {
+      "id": "ios.release",
+      "pageId": "ios",
+      "title": "Текущая версия",
+      "isVisible": true
+    },
+    {
+      "id": "ios.screenshots",
+      "pageId": "ios",
+      "title": "Скриншоты iOS",
+      "isVisible": true
+    },
+    {
+      "id": "ios.installation",
+      "pageId": "ios",
+      "title": "Инструкция установки",
+      "isVisible": true
+    },
+    {
+      "id": "ios.automation",
+      "pageId": "ios",
+      "title": "Автоматизации",
+      "isVisible": true
+    },
+    {
+      "id": "android.release",
+      "pageId": "android",
+      "title": "Текущая версия",
+      "isVisible": true
+    },
+    {
+      "id": "android.installation",
+      "pageId": "android",
+      "title": "Инструкция установки",
+      "isVisible": true
+    },
+    {
+      "id": "android.screenshots",
+      "pageId": "android",
+      "title": "Скриншоты Android",
+      "isVisible": true
+    },
+    {
+      "id": "changelog.releases",
+      "pageId": "changelog",
+      "title": "Опубликованные версии",
+      "isVisible": true
+    },
+    {
+      "id": "help.android",
+      "pageId": "help",
+      "title": "Решение проблем Android",
+      "isVisible": true
+    },
+    {
+      "id": "help.faq",
+      "pageId": "help",
+      "title": "Частые вопросы и установка iOS",
+      "isVisible": true
+    }
+  ],
+  "texts": [
+    {
+      "id": "app.695a84499d93",
+      "group": "Подвал",
+      "label": "iOS и SideStore",
+      "value": "iOS и SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "app.d7ebbab7cfa9",
+      "group": "История обновлений",
+      "label": "История обновлений",
+      "value": "История обновлений",
+      "isVisible": true
+    },
+    {
+      "id": "app.36f798a63c92",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Помощь",
+      "value": "Помощь",
+      "isVisible": true
+    },
+    {
+      "id": "app.88d71676fa80",
+      "group": "Подвал",
+      "label": "Инженер",
+      "value": "Инженер",
+      "isVisible": true
+    },
+    {
+      "id": "app.59b7bb731c07",
+      "group": "Подвал",
+      "label": "Рабочий день под контролем.",
+      "value": "Рабочий день под контролем.",
+      "isVisible": true
+    },
+    {
+      "id": "app.b1bde02cc6d6",
+      "group": "Подвал",
+      "label": "Навигация в подвале",
+      "value": "Навигация в подвале",
+      "isVisible": true
+    },
+    {
+      "id": "app.e717b58a22e2",
+      "group": "Подвал",
+      "label": "Источник SideStore",
+      "value": "Источник SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "app.253dfdd723c0",
+      "group": "Подвал",
+      "label": "Авторы графики",
+      "value": "Авторы графики",
+      "isVisible": true
+    },
+    {
+      "id": "app.d328e53dc456",
+      "group": "Навигация",
+      "label": "Главная",
+      "value": "Главная",
+      "isVisible": true
+    },
+    {
+      "id": "app.2f7317707ea7",
+      "group": "iOS — релиз",
+      "label": "Инженер для iOS",
+      "value": "Инженер для iOS",
+      "isVisible": true
+    },
+    {
+      "id": "app.83b27fcb6d90",
+      "group": "iOS — релиз",
+      "label": "Установка через SideStore",
+      "value": "Установка через SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "app.c39948923340",
+      "group": "iOS — релиз",
+      "label": "Версия",
+      "value": "Версия",
+      "isVisible": true
+    },
+    {
+      "id": "app.572095d4a787",
+      "group": "iOS — релиз",
+      "label": "Размер",
+      "value": "Размер",
+      "isVisible": true
+    },
+    {
+      "id": "app.79b5bfb4673a",
+      "group": "iOS — релиз",
+      "label": "Совместимость",
+      "value": "Совместимость",
+      "isVisible": true
+    },
+    {
+      "id": "app.4a29336a4961",
+      "group": "iOS — релиз",
+      "label": "iOS",
+      "value": "iOS ",
+      "isVisible": true
+    },
+    {
+      "id": "app.9cb5f087c2b8",
+      "group": "iOS — релиз",
+      "label": "Добавить в SideStore",
+      "value": "Добавить в SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "app.b86ef1346ca2",
+      "group": "iOS — релиз",
+      "label": "Сначала установите SideStore по инструкции ниже.",
+      "value": "Сначала установите SideStore по инструкции ниже.",
+      "isVisible": true
+    },
+    {
+      "id": "app.0c107994ef84",
+      "group": "Главная — установка",
+      "label": "Установите на своё устройство",
+      "value": "Установите на своё устройство",
+      "isVisible": true
+    },
+    {
+      "id": "app.939aca016a9f",
+      "group": "Главная — установка",
+      "label": "Один рабочий инструмент. Два способа установки.",
+      "value": "Один рабочий инструмент. Два способа установки.",
+      "isVisible": true
+    },
+    {
+      "id": "app.52d21f4ef2e0",
+      "group": "Главная — установка",
+      "label": "Ваша платформа",
+      "value": "Ваша платформа",
+      "isVisible": true
+    },
+    {
+      "id": "app.355f5e748485",
+      "group": "Главная — установка",
+      "label": "iOS",
+      "value": "iOS",
+      "isVisible": true
+    },
+    {
+      "id": "app.6d612a86bee4",
+      "group": "Главная — установка",
+      "label": "Android",
+      "value": "Android",
+      "isVisible": true
+    },
+    {
+      "id": "app.517896f01ddc",
+      "group": "Главная — установка",
+      "label": "Через SideStore",
+      "value": "Через SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "app.1f674e4155c3",
+      "group": "Главная — установка",
+      "label": "APK без магазина приложений",
+      "value": "APK без магазина приложений",
+      "isVisible": true
+    },
+    {
+      "id": "app.9cf249e2a881",
+      "group": "Главная — установка",
+      "label": "Выбрано",
+      "value": "Выбрано",
+      "isVisible": true
+    },
+    {
+      "id": "app.7813a4bb264e",
+      "group": "Главная — установка",
+      "label": "Установка на iPhone",
+      "value": "Установка на iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "app.a53c123ec7d6",
+      "group": "Главная — установка",
+      "label": "Релиз и установка APK",
+      "value": "Релиз и установка APK",
+      "isVisible": true
+    },
+    {
+      "id": "app.9a7abebf0298",
+      "group": "Главная — возможности",
+      "label": "Заявки и маршрут",
+      "value": "Заявки и маршрут",
+      "isVisible": true
+    },
+    {
+      "id": "app.1cd02d7980dd",
+      "group": "Главная — возможности",
+      "label": "Откройте активные заявки, проверьте адреса и постройте маршрут в Яндекс.Картах.",
+      "value": "Откройте активные заявки, проверьте адреса и постройте маршрут в Яндекс.Картах.",
+      "isVisible": true
+    },
+    {
+      "id": "app.92d3172779f8",
+      "group": "Главная — возможности",
+      "label": "Рабочие инструкции",
+      "value": "Рабочие инструкции",
+      "isVisible": true
+    },
+    {
+      "id": "app.c7e763c2819f",
+      "group": "Главная — возможности",
+      "label": "Найдите нужную информацию в Wiki, пока работаете на объекте.",
+      "value": "Найдите нужную информацию в Wiki, пока работаете на объекте.",
+      "isVisible": true
+    },
+    {
+      "id": "app.b901d703c038",
+      "group": "Главная — возможности",
+      "label": "Результаты дня",
+      "value": "Результаты дня",
+      "isVisible": true
+    },
+    {
+      "id": "app.8efde53732ab",
+      "group": "Главная — возможности",
+      "label": "Соберите данные о пробеге, заправках и выполненной работе.",
+      "value": "Соберите данные о пробеге, заправках и выполненной работе.",
+      "isVisible": true
+    },
+    {
+      "id": "app.21580877fedc",
+      "group": "Главная — возможности",
+      "label": "От заявки до отчёта",
+      "value": "От заявки до отчёта",
+      "isVisible": true
+    },
+    {
+      "id": "app.b2a7338c8a17",
+      "group": "Главная — возможности",
+      "label": "Всё, что нужно в течение смены, рядом.",
+      "value": "Всё, что нужно в течение смены, рядом.",
+      "isVisible": true
+    },
+    {
+      "id": "app.bf7a7b6c958e",
+      "group": "Главная — возможности",
+      "label": "На изображениях — версия для iOS",
+      "value": "На изображениях — версия для iOS",
+      "isVisible": true
+    },
+    {
+      "id": "app.af6d4ea42203",
+      "group": "Главная — возможности",
+      "label": "Автомобиль и топливо",
+      "value": "Автомобиль и топливо",
+      "isVisible": true
+    },
+    {
+      "id": "app.081b7f707ebb",
+      "group": "Главная — возможности",
+      "label": "Оборудование и серийные номера",
+      "value": "Оборудование и серийные номера",
+      "isVisible": true
+    },
+    {
+      "id": "app.f209fa398b11",
+      "group": "Главная — возможности",
+      "label": "Выплаты и трудозатраты",
+      "value": "Выплаты и трудозатраты",
+      "isVisible": true
+    },
+    {
+      "id": "app.2d3f8d7cb1dc",
+      "group": "Главная — возможности",
+      "label": "Приложение на каждом этапе работы",
+      "value": "Приложение на каждом этапе работы",
+      "isVisible": true
+    },
+    {
+      "id": "app.19fcc71d2bd0",
+      "group": "Главная — возможности",
+      "label": "Перед выездом",
+      "value": "Перед выездом",
+      "isVisible": true
+    },
+    {
+      "id": "app.308b77c886f5",
+      "group": "Главная — возможности",
+      "label": "Посмотрите заявки и адреса. Подготовьте маршрут и оборудование.",
+      "value": "Посмотрите заявки и адреса. Подготовьте маршрут и оборудование.",
+      "isVisible": true
+    },
+    {
+      "id": "app.c372882e64bf",
+      "group": "Главная — возможности",
+      "label": "На объекте",
+      "value": "На объекте",
+      "isVisible": true
+    },
+    {
+      "id": "app.6d55c1bb2678",
+      "group": "Главная — возможности",
+      "label": "Откройте рабочую инструкцию, найдите серийный номер, уточните данные заявки.",
+      "value": "Откройте рабочую инструкцию, найдите серийный номер, уточните данные заявки.",
+      "isVisible": true
+    },
+    {
+      "id": "app.deb1411b0c1f",
+      "group": "Главная — возможности",
+      "label": "В конце дня",
+      "value": "В конце дня",
+      "isVisible": true
+    },
+    {
+      "id": "app.bfa80664d541",
+      "group": "Главная — возможности",
+      "label": "Проверьте пробег и заправки, подготовьте дневной отчёт.",
+      "value": "Проверьте пробег и заправки, подготовьте дневной отчёт.",
+      "isVisible": true
+    },
+    {
+      "id": "app.8b651b4d73e6",
+      "group": "Главная — возможности",
+      "label": "Последние обновления",
+      "value": "Последние обновления",
+      "isVisible": true
+    },
+    {
+      "id": "app.c690e3cbb55a",
+      "group": "Главная — возможности",
+      "label": "Вся история",
+      "value": "Вся история",
+      "isVisible": true
+    },
+    {
+      "id": "app.315b7b16dd60",
+      "group": "Главная — возможности",
+      "label": "Готово к вашему рабочему дню.",
+      "value": "Готово к вашему рабочему дню.",
+      "isVisible": true
+    },
+    {
+      "id": "app.1b93f1659870",
+      "group": "Главная — возможности",
+      "label": "Выбрать платформу",
+      "value": "Выбрать платформу",
+      "isVisible": true
+    },
+    {
+      "id": "app.32072150adca",
+      "group": "Главная — возможности",
+      "label": "Помощь с установкой",
+      "value": "Помощь с установкой",
+      "isVisible": true
+    },
+    {
+      "id": "app.4d6dd7e7fb52",
+      "group": "Android — установка",
+      "label": "Как установить и обновить",
+      "value": "Как установить и обновить",
+      "isVisible": true
+    },
+    {
+      "id": "app.5732f9b4fb2f",
+      "group": "Android — установка",
+      "label": "Скачайте APK",
+      "value": "Скачайте APK",
+      "isVisible": true
+    },
+    {
+      "id": "app.d147f78d86ca",
+      "group": "Android — установка",
+      "label": "Дождитесь завершения загрузки и откройте файл на Android.",
+      "value": "Дождитесь завершения загрузки и откройте файл на Android.",
+      "isVisible": true
+    },
+    {
+      "id": "app.b293dae32300",
+      "group": "Android — установка",
+      "label": "Разрешите установку из этого источника",
+      "value": "Разрешите установку из этого источника",
+      "isVisible": true
+    },
+    {
+      "id": "app.ad5574924a28",
+      "group": "Android — установка",
+      "label": "Если система попросит, разрешите браузеру установку приложений. После установки разрешение можно отк",
+      "value": "Если система попросит, разрешите браузеру установку приложений. После установки разрешение можно отключить.",
+      "isVisible": true
+    },
+    {
+      "id": "app.013b4f5768e0",
+      "group": "Android — установка",
+      "label": "Подтвердите установку",
+      "value": "Подтвердите установку",
+      "isVisible": true
+    },
+    {
+      "id": "app.8093aa882387",
+      "group": "Android — установка",
+      "label": "При обновлении устанавливайте поверх текущей версии. Удалять приложение не нужно — так сохраняются л",
+      "value": "При обновлении устанавливайте поверх текущей версии. Удалять приложение не нужно — так сохраняются локальные данные.",
+      "isVisible": true
+    },
+    {
+      "id": "app.b3b77fa63e51",
+      "group": "Android — установка",
+      "label": "Для обновления нужна та же подпись приложения. Если система сообщает о конфликте пакета, не удаляйте",
+      "value": "Для обновления нужна та же подпись приложения. Если система сообщает о конфликте пакета, не удаляйте текущую версию: проверьте источник APK и обратитесь к администратору.",
+      "isVisible": true
+    },
+    {
+      "id": "app.ade969043f43",
+      "group": "Android — установка",
+      "label": "Ошибки установки и обновления",
+      "value": "Ошибки установки и обновления",
+      "isVisible": true
+    },
+    {
+      "id": "app.f6df1111643f",
+      "group": "История обновлений",
+      "label": "Описание не указано.",
+      "value": "Описание не указано.",
+      "isVisible": true
+    },
+    {
+      "id": "app.42659231dbcd",
+      "group": "История обновлений",
+      "label": "Версии и изменения из опубликованных каталогов iOS и Android.",
+      "value": "Версии и изменения из опубликованных каталогов iOS и Android.",
+      "isVisible": true
+    },
+    {
+      "id": "app.9521d3457cfe",
+      "group": "История обновлений",
+      "label": "Архив Android недоступен. Показана только текущая версия.",
+      "value": "Архив Android недоступен. Показана только текущая версия.",
+      "isVisible": true
+    },
+    {
+      "id": "app.f35ba214e95d",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Перейти к содержимому",
+      "value": "Перейти к содержимому",
+      "isVisible": true
+    },
+    {
+      "id": "app.77b0ea9ab638",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Страница временно недоступна",
+      "value": "Страница временно недоступна",
+      "isVisible": true
+    },
+    {
+      "id": "app.7b45c0ff8503",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Выберите другой раздел сайта.",
+      "value": "Выберите другой раздел сайта.",
+      "isVisible": true
+    },
+    {
+      "id": "app.15967bde3488",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Инженер для Android",
+      "value": "Инженер для Android",
+      "isVisible": true
+    },
+    {
+      "id": "app.42a628986032",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Скачайте APK напрямую и подтвердите установку в системном окне Android.",
+      "value": "Скачайте APK напрямую и подтвердите установку в системном окне Android.",
+      "isVisible": true
+    },
+    {
+      "id": "app.8d7706cc2f3a",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Интерфейс приложения для Android",
+      "value": "Интерфейс приложения для Android",
+      "isVisible": true
+    },
+    {
+      "id": "app.5e8c3b8a8bd9",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Экраны приложения для телефона и планшета.",
+      "value": "Экраны приложения для телефона и планшета.",
+      "isVisible": true
+    },
+    {
+      "id": "app.5485bc972628",
+      "group": "Страницы — заголовки и помощь",
+      "label": "К скачиванию APK",
+      "value": "К скачиванию APK",
+      "isVisible": true
+    },
+    {
+      "id": "app.40dbfea03c84",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Инженер для iPhone",
+      "value": "Инженер для iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "app.6e47b1b5943c",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Установите приложение через SideStore. Источник и обновления доступны по прежнему адресу.",
+      "value": "Установите приложение через SideStore. Источник и обновления доступны по прежнему адресу.",
+      "isVisible": true
+    },
+    {
+      "id": "app.32a7e78c976e",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Установка, обновления и решение частых проблем.",
+      "value": "Установка, обновления и решение частых проблем.",
+      "isVisible": true
+    },
+    {
+      "id": "app.2a6bf4e529c3",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Обновление внутри Android",
+      "value": "Обновление внутри Android",
+      "isVisible": true
+    },
+    {
+      "id": "app.709015ef3e79",
+      "group": "Страницы — заголовки и помощь",
+      "label": "В версиях со встроенной проверкой откройте Настройки → Проверить обновления. Приложение проверит фай",
+      "value": "В версиях со встроенной проверкой откройте Настройки → Проверить обновления. Приложение проверит файл и предложит системную установку. Если такого пункта ещё нет, скачайте APK со страницы Android.",
+      "isVisible": true
+    },
+    {
+      "id": "app.47f4d01314e6",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Загрузка не завершилась",
+      "value": "Загрузка не завершилась",
+      "isVisible": true
+    },
+    {
+      "id": "app.a5a9a409b33b",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Проверьте сеть и свободное место. Повторите загрузку; повреждённый файл устанавливать нельзя.",
+      "value": "Проверьте сеть и свободное место. Повторите загрузку; повреждённый файл устанавливать нельзя.",
+      "isVisible": true
+    },
+    {
+      "id": "app.4fc1ff588337",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Контрольная сумма или подпись не совпадает",
+      "value": "Контрольная сумма или подпись не совпадает",
+      "isVisible": true
+    },
+    {
+      "id": "app.6ed30d7c029b",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Повторите загрузку из официального источника. Не удаляйте установленное приложение и не используйте ",
+      "value": "Повторите загрузку из официального источника. Не удаляйте установленное приложение и не используйте файл с ошибкой проверки.",
+      "isVisible": true
+    },
+    {
+      "id": "app.128190cd9958",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Нет разрешения на установку",
+      "value": "Нет разрешения на установку",
+      "isVisible": true
+    },
+    {
+      "id": "app.b210edb47b91",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Разрешите установку для браузера либо для «Инженер» в системных настройках, затем вернитесь и повтор",
+      "value": "Разрешите установку для браузера либо для «Инженер» в системных настройках, затем вернитесь и повторите установку.",
+      "isVisible": true
+    },
+    {
+      "id": "app.945c1efb4a24",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Установка отменена",
+      "value": "Установка отменена",
+      "isVisible": true
+    },
+    {
+      "id": "app.9c01aeeccc39",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Приложение продолжит работать в текущей версии. Повторите установку, когда будете готовы.",
+      "value": "Приложение продолжит работать в текущей версии. Повторите установку, когда будете готовы.",
+      "isVisible": true
+    },
+    {
+      "id": "app.261c2d4e8410",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Инструкция для iOS",
+      "value": "Инструкция для iOS",
+      "isVisible": true
+    },
+    {
+      "id": "app.af9d33066ad6",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Страница не найдена",
+      "value": "Страница не найдена",
+      "isVisible": true
+    },
+    {
+      "id": "app.a7562ac3fcbd",
+      "group": "Страницы — заголовки и помощь",
+      "label": "Выберите платформу или откройте главную страницу.",
+      "value": "Выберите платформу или откройте главную страницу.",
+      "isVisible": true
+    },
+    {
+      "id": "app.d1cb17b3620b",
+      "group": "Системные сообщения",
+      "label": "Не удалось загрузить сайт.",
+      "value": "Не удалось загрузить сайт.",
+      "isVisible": true
+    },
+    {
+      "id": "app.db491ef5033f",
+      "group": "Системные сообщения",
+      "label": "Загрузка…",
+      "value": "Загрузка…",
+      "isVisible": true
+    },
+    {
+      "id": "app.5189135a6110",
+      "group": "Системные сообщения",
+      "label": "Повторить",
+      "value": "Повторить",
+      "isVisible": true
+    },
+    {
+      "id": "app.0ef1cda5becc",
+      "group": "Системные сообщения",
+      "label": "Сайт временно недоступен",
+      "value": "Сайт временно недоступен",
+      "isVisible": true
+    },
+    {
+      "id": "header.8217da0e3f79",
+      "group": "Навигация",
+      "label": "Инженер — главная",
+      "value": "Инженер — главная",
+      "isVisible": true
+    },
+    {
+      "id": "header.88d71676fa80",
+      "group": "Навигация",
+      "label": "Инженер",
+      "value": "Инженер",
+      "isVisible": true
+    },
+    {
+      "id": "header.a7a4033657e8",
+      "group": "Навигация",
+      "label": "Закрыть",
+      "value": "Закрыть",
+      "isVisible": true
+    },
+    {
+      "id": "header.122f71765026",
+      "group": "Навигация",
+      "label": "Меню",
+      "value": "Меню",
+      "isVisible": true
+    },
+    {
+      "id": "header.8fff0bba4454",
+      "group": "Навигация",
+      "label": "Основная навигация",
+      "value": "Основная навигация",
+      "isVisible": true
+    },
+    {
+      "id": "header.26b855cc1660",
+      "group": "Навигация",
+      "label": "Приложение",
+      "value": "Приложение",
+      "isVisible": true
+    },
+    {
+      "id": "header.455471db0cfb",
+      "group": "Навигация",
+      "label": "Обновления",
+      "value": "Обновления",
+      "isVisible": true
+    },
+    {
+      "id": "header.36f798a63c92",
+      "group": "Навигация",
+      "label": "Помощь",
+      "value": "Помощь",
+      "isVisible": true
+    },
+    {
+      "id": "header.b7cd6fae08d9",
+      "group": "Навигация",
+      "label": "Установить",
+      "value": "Установить",
+      "isVisible": true
+    },
+    {
+      "id": "hero.8a3506d9afae",
+      "group": "Главная — первый экран",
+      "label": "Рабочее приложение выездного инженера",
+      "value": "Рабочее приложение выездного инженера",
+      "isVisible": true
+    },
+    {
+      "id": "hero.fefe1b0f6ae2",
+      "group": "Главная — первый экран",
+      "label": "Весь рабочий день.",
+      "value": "Весь рабочий день.",
+      "isVisible": true
+    },
+    {
+      "id": "hero.8c934c998648",
+      "group": "Главная — первый экран",
+      "label": "В одном приложении.",
+      "value": "В одном приложении.",
+      "isVisible": true
+    },
+    {
+      "id": "hero.c29b835a5506",
+      "group": "Главная — первый экран",
+      "label": "Заявки, маршрут, оборудование и рабочие инструкции. От первого адреса до дневного отчёта — на iOS и ",
+      "value": "Заявки, маршрут, оборудование и рабочие инструкции. От первого адреса до дневного отчёта — на iOS и Android.",
+      "isVisible": true
+    },
+    {
+      "id": "hero.1948dc7a9d0b",
+      "group": "Главная — первый экран",
+      "label": "Установить приложение",
+      "value": "Установить приложение",
+      "isVisible": true
+    },
+    {
+      "id": "hero.04afc09e60bd",
+      "group": "Главная — первый экран",
+      "label": "Возможности",
+      "value": "Возможности",
+      "isVisible": true
+    },
+    {
+      "id": "hero.38fdf519314e",
+      "group": "Главная — первый экран",
+      "label": "iPhone",
+      "value": "iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "hero.7a4cb5ffab26",
+      "group": "Главная — первый экран",
+      "label": "Android: телефон и планшет",
+      "value": "Android: телефон и планшет",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.d4e1667df17d",
+      "group": "Превью приложения",
+      "label": "Макет Google Pixel 9 Pro. Настоящие скриншоты приложения появятся позже.",
+      "value": "Макет Google Pixel 9 Pro. Настоящие скриншоты приложения появятся позже.",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.88d71676fa80",
+      "group": "Превью приложения",
+      "label": "Инженер",
+      "value": "Инженер",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.c735d61c00c3",
+      "group": "Превью приложения",
+      "label": "Скриншоты скоро",
+      "value": "Скриншоты скоро",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.7a15d6d64e2c",
+      "group": "Превью приложения",
+      "label": "Здесь появятся реальные",
+      "value": "Здесь появятся реальные",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.4c35c0580d4f",
+      "group": "Превью приложения",
+      "label": "экраны Android",
+      "value": "экраны Android",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.e554a17cf0ed",
+      "group": "Превью приложения",
+      "label": "Макет устройства",
+      "value": "Макет устройства",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.85960b6702a9",
+      "group": "Превью приложения",
+      "label": "Платформа в превью",
+      "value": "Платформа в превью",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.d229dfd43fd5",
+      "group": "Превью приложения",
+      "label": "Скриншоты пока не добавлены",
+      "value": "Скриншоты пока не добавлены",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.0ceb7d367de1",
+      "group": "Превью приложения",
+      "label": "Скриншоты приложения",
+      "value": "Скриншоты приложения",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.b06faf8a5739",
+      "group": "Состояние релиза",
+      "label": "Проверяем доступность релиза…",
+      "value": "Проверяем доступность релиза…",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.dc7dbeb80969",
+      "group": "Состояние релиза",
+      "label": "Проверить снова",
+      "value": "Проверить снова",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.15967bde3488",
+      "group": "Android — релиз",
+      "label": "Инженер для Android",
+      "value": "Инженер для Android",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.5ad369b866b1",
+      "group": "Android — релиз",
+      "label": "Прямая установка APK",
+      "value": "Прямая установка APK",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.c39948923340",
+      "group": "Android — релиз",
+      "label": "Версия",
+      "value": "Версия",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.572095d4a787",
+      "group": "Android — релиз",
+      "label": "Размер",
+      "value": "Размер",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.382ded9c6877",
+      "group": "Android — релиз",
+      "label": "Опубликовано",
+      "value": "Опубликовано",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.79b5bfb4673a",
+      "group": "Android — релиз",
+      "label": "Совместимость",
+      "value": "Совместимость",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.8d8f588955d7",
+      "group": "Android — релиз",
+      "label": "Android SDK",
+      "value": "Android SDK ",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.3e5bd8d625a6",
+      "group": "Android — релиз",
+      "label": "Скачать APK ·",
+      "value": "Скачать APK · ",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.1d62012e3b8e",
+      "group": "Android — релиз",
+      "label": "Контрольная сумма SHA-256",
+      "value": "Контрольная сумма SHA-256",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.bc016a1cbc97",
+      "group": "Android — релиз",
+      "label": "Что изменилось",
+      "value": "Что изменилось",
+      "isVisible": true
+    },
+    {
+      "id": "installation.5109c917566d",
+      "group": "iOS — источник",
+      "label": "URL источника скопирован",
+      "value": "URL источника скопирован",
+      "isVisible": true
+    },
+    {
+      "id": "installation.a2fe4e1c37c8",
+      "group": "iOS — источник",
+      "label": "Не удалось скопировать — выделите URL вручную",
+      "value": "Не удалось скопировать — выделите URL вручную",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d2d08c715ee6",
+      "group": "iOS — источник",
+      "label": "Скопировано",
+      "value": "Скопировано",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b5821b606f3a",
+      "group": "iOS — источник",
+      "label": "Скопировать URL",
+      "value": "Скопировать URL",
+      "isVisible": true
+    },
+    {
+      "id": "installation.9cb5f087c2b8",
+      "group": "iOS — источник",
+      "label": "Добавить в SideStore",
+      "value": "Добавить в SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "installation.5ea5c68f20d4",
+      "group": "iOS — быстрая установка",
+      "label": "Подготовка",
+      "value": "Подготовка",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e72cbba0e01f",
+      "group": "iOS — полная установка",
+      "label": "Подготовьте iPhone и компьютер",
+      "value": "Подготовьте iPhone и компьютер",
+      "isVisible": true
+    },
+    {
+      "id": "installation.6e5778af5d3f",
+      "group": "iOS — полная установка",
+      "label": "Установите",
+      "value": "Установите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d8d6736fe704",
+      "group": "iOS — установка",
+      "label": "LocalDevVPN",
+      "value": "LocalDevVPN",
+      "isVisible": true
+    },
+    {
+      "id": "installation.fb4f276a3a2a",
+      "group": "iOS — полная установка",
+      "label": "на iPhone. На Mac установите iloader; на Windows — сначала iTunes, затем iloader. Подключите iPhone ",
+      "value": " на iPhone. На Mac установите iloader; на Windows — сначала iTunes, затем iloader. Подключите iPhone и компьютер к Wi‑Fi.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ab71afb97f2e",
+      "group": "iOS — полная установка",
+      "label": "Подключение",
+      "value": "Подключение",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b53dc73e770d",
+      "group": "iOS — полная установка",
+      "label": "Подключите iPhone кабелем",
+      "value": "Подключите iPhone кабелем",
+      "isVisible": true
+    },
+    {
+      "id": "installation.bc1ec3e392db",
+      "group": "iOS — полная установка",
+      "label": "Разблокируйте iPhone, подключите его к компьютеру USB-кабелем, нажмите",
+      "value": "Разблокируйте iPhone, подключите его к компьютеру USB-кабелем, нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.143fd3bb9875",
+      "group": "iOS — полная установка",
+      "label": "«Доверять»",
+      "value": "«Доверять»",
+      "isVisible": true
+    },
+    {
+      "id": "installation.6f08eb745298",
+      "group": "iOS — полная установка",
+      "label": "на iPhone и введите код-пароль. На Mac устройство должно появиться в Finder, на Windows — в iTunes.",
+      "value": " на iPhone и введите код-пароль. На Mac устройство должно появиться в Finder, на Windows — в iTunes.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.3884f40baa85",
+      "group": "iOS — полная установка",
+      "label": "Установите SideStore через iloader",
+      "value": "Установите SideStore через iloader",
+      "isVisible": true
+    },
+    {
+      "id": "installation.cef2279e8f63",
+      "group": "iOS — полная установка",
+      "label": "Откройте iloader, войдите в Apple Account, выберите подключённый iPhone и нажмите",
+      "value": "Откройте iloader, войдите в Apple Account, выберите подключённый iPhone и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.a98da0a9febd",
+      "group": "iOS — полная установка",
+      "label": "Install SideStore (Stable)",
+      "value": "Install SideStore (Stable)",
+      "isVisible": true
+    },
+    {
+      "id": "installation.cdaa615062b1",
+      "group": "iOS — полная установка",
+      "label": ". Дождитесь завершения установки и не отключайте кабель.",
+      "value": ". Дождитесь завершения установки и не отключайте кабель.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.95eb6208f486",
+      "group": "iOS — полная установка",
+      "label": "Доверие",
+      "value": "Доверие",
+      "isVisible": true
+    },
+    {
+      "id": "installation.20c847e0b7fc",
+      "group": "iOS — полная установка",
+      "label": "Разрешите запуск SideStore",
+      "value": "Разрешите запуск SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e471086182e0",
+      "group": "iOS — полная установка",
+      "label": "На iPhone откройте",
+      "value": "На iPhone откройте ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.def239289163",
+      "group": "iOS — полная установка",
+      "label": "Настройки → Основные → VPN и управление устройством",
+      "value": "Настройки → Основные → VPN и управление устройством",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b26de92af556",
+      "group": "iOS — полная установка",
+      "label": ". Выберите профиль с вашим Apple Account, нажмите",
+      "value": ". Выберите профиль с вашим Apple Account, нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.0b52a9f6d3c3",
+      "group": "iOS — полная установка",
+      "label": "«Доверять» / «Разрешить и перезагрузить»",
+      "value": "«Доверять» / «Разрешить и перезагрузить»",
+      "isVisible": true
+    },
+    {
+      "id": "installation.214457d9bc8e",
+      "group": "iOS — полная установка",
+      "label": "и подтвердите действие код-паролем.",
+      "value": " и подтвердите действие код-паролем.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.eea204cb2afe",
+      "group": "iOS — полная установка",
+      "label": "Режим разработчика",
+      "value": "Режим разработчика",
+      "isVisible": true
+    },
+    {
+      "id": "installation.2e85c9669010",
+      "group": "iOS — полная установка",
+      "label": "Включите режим разработчика",
+      "value": "Включите режим разработчика",
+      "isVisible": true
+    },
+    {
+      "id": "installation.fa36e3acdaa0",
+      "group": "iOS — полная установка",
+      "label": "Откройте",
+      "value": "Откройте ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.a741f3b1d04b",
+      "group": "iOS — полная установка",
+      "label": "Настройки → Конфиденциальность и безопасность → Режим разработчика",
+      "value": "Настройки → Конфиденциальность и безопасность → Режим разработчика",
+      "isVisible": true
+    },
+    {
+      "id": "installation.7f05ff78c6d8",
+      "group": "iOS — полная установка",
+      "label": ", включите его и согласитесь на перезагрузку iPhone. После запуска подтвердите включение.",
+      "value": ", включите его и согласитесь на перезагрузку iPhone. После запуска подтвердите включение.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.7c50e466fc25",
+      "group": "iOS — полная установка",
+      "label": "Настройка",
+      "value": "Настройка",
+      "isVisible": true
+    },
+    {
+      "id": "installation.8b12d4a08190",
+      "group": "iOS — полная установка",
+      "label": "Завершите настройку SideStore",
+      "value": "Завершите настройку SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "installation.2f353bed2ca0",
+      "group": "iOS — полная установка",
+      "label": "Откройте LocalDevVPN и нажмите",
+      "value": "Откройте LocalDevVPN и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.1a2303ede074",
+      "group": "iOS — быстрая установка",
+      "label": "Connect",
+      "value": "Connect",
+      "isVisible": true
+    },
+    {
+      "id": "installation.96e0700ef0ff",
+      "group": "iOS — полная установка",
+      "label": ". Затем откройте SideStore, войдите в тот же Apple Account, перейдите в",
+      "value": ". Затем откройте SideStore, войдите в тот же Apple Account, перейдите в ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ff7e51389550",
+      "group": "iOS — полная установка",
+      "label": "My Apps",
+      "value": "My Apps",
+      "isVisible": true
+    },
+    {
+      "id": "installation.30bafde2e1f7",
+      "group": "iOS — полная установка",
+      "label": "и нажмите счётчик",
+      "value": " и нажмите счётчик ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.24b6ab7fc4d7",
+      "group": "iOS — полная установка",
+      "label": "7 DAYS",
+      "value": "7 DAYS",
+      "isVisible": true
+    },
+    {
+      "id": "installation.8985499c83d0",
+      "group": "iOS — полная установка",
+      "label": "рядом с SideStore. Запрос сертификата подтвердите кнопкой",
+      "value": " рядом с SideStore. Запрос сертификата подтвердите кнопкой ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.85a39ab345d6",
+      "group": "iOS — полная установка",
+      "label": "Yes",
+      "value": "Yes",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d8fc89173cfe",
+      "group": "iOS — полная установка",
+      "label": "или",
+      "value": " или ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.c7b4a057f059",
+      "group": "iOS — полная установка",
+      "label": "Refresh Now",
+      "value": "Refresh Now",
+      "isVisible": true
+    },
+    {
+      "id": "installation.56e46960c104",
+      "group": "iOS — быстрая установка",
+      "label": "Источник",
+      "value": "Источник",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ee5507c91219",
+      "group": "iOS — быстрая установка",
+      "label": "Добавьте источник приложения",
+      "value": "Добавьте источник приложения",
+      "isVisible": true
+    },
+    {
+      "id": "installation.fdbee65b45e7",
+      "group": "iOS — полная установка",
+      "label": "Откройте эту страницу на iPhone и нажмите",
+      "value": "Откройте эту страницу на iPhone и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.189dde643ae4",
+      "group": "iOS — быстрая установка",
+      "label": "«Добавить в SideStore»",
+      "value": "«Добавить в SideStore»",
+      "isVisible": true
+    },
+    {
+      "id": "installation.458c3dc49dcd",
+      "group": "iOS — полная установка",
+      "label": ". Если ссылка не открылась, скопируйте адрес ниже и добавьте его вручную в разделе",
+      "value": ". Если ссылка не открылась, скопируйте адрес ниже и добавьте его вручную в разделе ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.caf85b0888d7",
+      "group": "iOS — быстрая установка",
+      "label": "Sources",
+      "value": "Sources",
+      "isVisible": true
+    },
+    {
+      "id": "installation.26b855cc1660",
+      "group": "iOS — быстрая установка",
+      "label": "Приложение",
+      "value": "Приложение",
+      "isVisible": true
+    },
+    {
+      "id": "installation.8a01ba223ebd",
+      "group": "iOS — быстрая установка",
+      "label": "Установите «Инженер»",
+      "value": "Установите «Инженер»",
+      "isVisible": true
+    },
+    {
+      "id": "installation.038e0f48b602",
+      "group": "iOS — полная установка",
+      "label": "В SideStore откройте добавленный источник, выберите «Инженер» и нажмите",
+      "value": "В SideStore откройте добавленный источник, выберите «Инженер» и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e720efa79df7",
+      "group": "iOS — быстрая установка",
+      "label": "Free / Install",
+      "value": "Free / Install",
+      "isVisible": true
+    },
+    {
+      "id": "installation.3cd62abe7db7",
+      "group": "iOS — полная установка",
+      "label": ". До завершения установки оставьте Wi‑Fi и LocalDevVPN включёнными.",
+      "value": ". До завершения установки оставьте Wi‑Fi и LocalDevVPN включёнными.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.455471db0cfb",
+      "group": "iOS — полная установка",
+      "label": "Обновления",
+      "value": "Обновления",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b99783d1e0a3",
+      "group": "iOS — полная установка",
+      "label": "Обновляйте без компьютера",
+      "value": "Обновляйте без компьютера",
+      "isVisible": true
+    },
+    {
+      "id": "installation.f8f4d59291a4",
+      "group": "iOS — полная установка",
+      "label": "Для обновления подключитесь к Wi‑Fi, включите LocalDevVPN, обновите источник в",
+      "value": "Для обновления подключитесь к Wi‑Fi, включите LocalDevVPN, обновите источник в ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.8a5268bced2f",
+      "group": "iOS — быстрая установка",
+      "label": "и нажмите",
+      "value": " и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.c1c1009d3f37",
+      "group": "iOS — полная установка",
+      "label": "Update",
+      "value": "Update",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ce8bf77072df",
+      "group": "iOS — полная установка",
+      "label": "у приложения. В",
+      "value": " у приложения. В ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.bdfc96ac2004",
+      "group": "iOS — полная установка",
+      "label": "периодически выполняйте",
+      "value": " периодически выполняйте ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.0e9161011702",
+      "group": "iOS — полная установка",
+      "label": "Refresh",
+      "value": "Refresh",
+      "isVisible": true
+    },
+    {
+      "id": "installation.cd945f437c80",
+      "group": "iOS — полная установка",
+      "label": ", чтобы подпись не истекла. Mac или ПК для этого не нужен.",
+      "value": ", чтобы подпись не истекла. Mac или ПК для этого не нужен.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.22a8994df6f7",
+      "group": "iOS — полная установка",
+      "label": "Для автоматического обновления подписи настройте",
+      "value": "Для автоматического обновления подписи настройте ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.cb9c8b842aa0",
+      "group": "iOS — полная установка",
+      "label": "три автоматизации",
+      "value": "три автоматизации",
+      "isVisible": true
+    },
+    {
+      "id": "installation.2ce386e77f86",
+      "group": "iOS — полная установка",
+      "label": "Ошибка 1006",
+      "value": "Ошибка 1006",
+      "isVisible": true
+    },
+    {
+      "id": "installation.8f79e0683d34",
+      "group": "iOS — полная установка",
+      "label": "SideStore → Settings → Reset Pairing File. Затем подключите iPhone кабелем, в iloader удалите сохран",
+      "value": "SideStore → Settings → Reset Pairing File. Затем подключите iPhone кабелем, в iloader удалите сохранённую пару, выполните Pair и выберите Manage Pairing File → Place рядом с SideStore.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.53a11b35433b",
+      "group": "iOS — быстрая установка",
+      "label": "Подготовьте iPhone",
+      "value": "Подготовьте iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "installation.52a5f1eeb34b",
+      "group": "iOS — быстрая установка",
+      "label": "Подключитесь к Wi‑Fi, откройте",
+      "value": "Подключитесь к Wi‑Fi, откройте ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e7e6ab41d1e9",
+      "group": "iOS — быстрая установка",
+      "label": ". Не отключайте VPN до завершения установки.",
+      "value": ". Не отключайте VPN до завершения установки.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.52e560880c52",
+      "group": "iOS — быстрая установка",
+      "label": "Нажмите",
+      "value": "Нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.f057301d4d28",
+      "group": "iOS — быстрая установка",
+      "label": ". Если ссылка не открылась, скопируйте адрес и добавьте его вручную в разделе",
+      "value": ". Если ссылка не открылась, скопируйте адрес и добавьте его вручную в разделе ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.1c4bd9ea785d",
+      "group": "iOS — быстрая установка",
+      "label": "Откройте добавленный источник, выберите «Инженер» и нажмите",
+      "value": "Откройте добавленный источник, выберите «Инженер» и нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.df69e70f52a6",
+      "group": "iOS — быстрая установка",
+      "label": ". Оставьте Wi‑Fi и LocalDevVPN включёнными до завершения установки.",
+      "value": ". Оставьте Wi‑Fi и LocalDevVPN включёнными до завершения установки.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d3738082d130",
+      "group": "iOS — установка",
+      "label": "Что потребуется",
+      "value": "Что потребуется",
+      "isVisible": true
+    },
+    {
+      "id": "installation.7f896156a7b2",
+      "group": "iOS — установка",
+      "label": "iPhone с iOS 26.2+",
+      "value": "iPhone с iOS 26.2+",
+      "isVisible": true
+    },
+    {
+      "id": "installation.9b221cef63bc",
+      "group": "iOS — установка",
+      "label": "Код-пароль на iPhone",
+      "value": "Код-пароль на iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "installation.c17bf5fa4fab",
+      "group": "iOS — установка",
+      "label": "USB-кабель",
+      "value": "USB-кабель",
+      "isVisible": true
+    },
+    {
+      "id": "installation.2e5ebf457d0c",
+      "group": "iOS — установка",
+      "label": "Программы для установки",
+      "value": "Программы для установки",
+      "isVisible": true
+    },
+    {
+      "id": "installation.38fdf519314e",
+      "group": "iOS — установка",
+      "label": "iPhone",
+      "value": "iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "installation.a976314e0819",
+      "group": "iOS — установка",
+      "label": "Должен быть подключён при установке, обновлении и продлении подписи.",
+      "value": "Должен быть подключён при установке, обновлении и продлении подписи.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b10def11b29f",
+      "group": "iOS — установка",
+      "label": "Открыть в App Store",
+      "value": "Открыть в App Store",
+      "isVisible": true
+    },
+    {
+      "id": "installation.aed6b7aa2a05",
+      "group": "iOS — установка",
+      "label": "macOS",
+      "value": "macOS",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ec960de1c8b4",
+      "group": "iOS — установка",
+      "label": "iloader для Mac",
+      "value": "iloader для Mac",
+      "isVisible": true
+    },
+    {
+      "id": "installation.29e0ae6c941b",
+      "group": "iOS — установка",
+      "label": "Универсальный DMG для Apple Silicon и Intel. Установите iloader в «Программы».",
+      "value": "Универсальный DMG для Apple Silicon и Intel. Установите iloader в «Программы».",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e2305c2d6090",
+      "group": "iOS — установка",
+      "label": "Скачать для macOS",
+      "value": "Скачать для macOS",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d598026a9cbc",
+      "group": "iOS — установка",
+      "label": "Windows",
+      "value": "Windows",
+      "isVisible": true
+    },
+    {
+      "id": "installation.12630424d728",
+      "group": "iOS — установка",
+      "label": "iTunes и iloader",
+      "value": "iTunes и iloader",
+      "isVisible": true
+    },
+    {
+      "id": "installation.02d61d788fa4",
+      "group": "iOS — установка",
+      "label": "Сначала iTunes, затем 64-битный iloader MSI. Windows 32-bit и Windows 10 ARM не поддерживаются.",
+      "value": "Сначала iTunes, затем 64-битный iloader MSI. Windows 32-bit и Windows 10 ARM не поддерживаются.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.d796f1646b2e",
+      "group": "iOS — установка",
+      "label": "Скачать iTunes",
+      "value": "Скачать iTunes",
+      "isVisible": true
+    },
+    {
+      "id": "installation.802dd6c44b2b",
+      "group": "iOS — установка",
+      "label": "Скачать iloader MSI",
+      "value": "Скачать iloader MSI",
+      "isVisible": true
+    },
+    {
+      "id": "installation.ebc8eef7c94e",
+      "group": "iOS — установка",
+      "label": "Шаги полной установки",
+      "value": "Шаги полной установки",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b157177cafdf",
+      "group": "iOS — установка",
+      "label": "Шаги быстрой установки",
+      "value": "Шаги быстрой установки",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e5d9795f56e8",
+      "group": "iOS — установка",
+      "label": "Выполнено:",
+      "value": "Выполнено: ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.e029cc4b39ce",
+      "group": "iOS — установка",
+      "label": "из",
+      "value": " из ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.cf19863c3e8b",
+      "group": "iOS — установка",
+      "label": "Шаг",
+      "value": "Шаг ",
+      "isVisible": true
+    },
+    {
+      "id": "installation.042edfa0545b",
+      "group": "iOS — установка",
+      "label": "Понадобятся iPhone, USB-кабель и Mac или Windows-компьютер.",
+      "value": "Понадобятся iPhone, USB-кабель и Mac или Windows-компьютер.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.4790d7614923",
+      "group": "iOS — установка",
+      "label": "SideStore должен быть уже установлен, авторизован и готов к обновлению приложений.",
+      "value": "SideStore должен быть уже установлен, авторизован и готов к обновлению приложений.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.2e870a6d0035",
+      "group": "iOS — установка",
+      "label": "SideStore уже установлен",
+      "value": "SideStore уже установлен",
+      "isVisible": true
+    },
+    {
+      "id": "installation.108ec33b6207",
+      "group": "iOS — установка",
+      "label": "Устанавливаю впервые",
+      "value": "Устанавливаю впервые",
+      "isVisible": true
+    },
+    {
+      "id": "installation.a95642d636d1",
+      "group": "iOS — установка",
+      "label": "Установка",
+      "value": "Установка",
+      "isVisible": true
+    },
+    {
+      "id": "installation.b1e29aa702f1",
+      "group": "iOS — установка",
+      "label": "Установите «Инженер» через SideStore.",
+      "value": "Установите «Инженер» через SideStore.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.852845c76bb0",
+      "group": "iOS — установка",
+      "label": "Если SideStore уже настроен, достаточно добавить источник и установить приложение. Для первой устано",
+      "value": "Если SideStore уже настроен, достаточно добавить источник и установить приложение. Для первой установки понадобится компьютер.",
+      "isVisible": true
+    },
+    {
+      "id": "installation.4b003ef83f39",
+      "group": "iOS — установка",
+      "label": "Сценарий установки",
+      "value": "Сценарий установки",
+      "isVisible": true
+    },
+    {
+      "id": "installation.daa83910b436",
+      "group": "iOS — установка",
+      "label": "Нужна справка по SideStore?",
+      "value": "Нужна справка по SideStore?",
+      "isVisible": true
+    },
+    {
+      "id": "installation.da415b98c19e",
+      "group": "iOS — установка",
+      "label": "Официальная инструкция SideStore",
+      "value": "Официальная инструкция SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "automation.98272bb52bc8",
+      "group": "iOS — автоматизации",
+      "label": "Откройте создание",
+      "value": "Откройте создание",
+      "isVisible": true
+    },
+    {
+      "id": "automation.e273e6eae2ee",
+      "group": "iOS — автоматизации",
+      "label": "Быстрые команды → Автоматизация → +",
+      "value": "Быстрые команды → Автоматизация → +",
+      "isVisible": true
+    },
+    {
+      "id": "automation.4fb4f39a5bd3",
+      "group": "iOS — автоматизации",
+      "label": ". Если появится выбор, нажмите",
+      "value": ". Если появится выбор, нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.fa7e7bff0b9c",
+      "group": "iOS — автоматизации",
+      "label": "«Создать автоматизацию для себя»",
+      "value": "«Создать автоматизацию для себя»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.47a2fd758476",
+      "group": "iOS — автоматизации",
+      "label": "Задайте время запуска",
+      "value": "Задайте время запуска",
+      "isVisible": true
+    },
+    {
+      "id": "automation.2877d37e284d",
+      "group": "iOS — автоматизации",
+      "label": "Выберите",
+      "value": "Выберите ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.2e526730c021",
+      "group": "iOS — автоматизации",
+      "label": "«Время суток»",
+      "value": "«Время суток»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.c879ac4df172",
+      "group": "iOS — автоматизации",
+      "label": ", укажите время и повтор",
+      "value": ", укажите время и повтор ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.743ad81bce43",
+      "group": "iOS — автоматизации",
+      "label": "«Ежедневно»",
+      "value": "«Ежедневно»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.0e3020e1df70",
+      "group": "iOS — автоматизации",
+      "label": "Уберите запрос подтверждения",
+      "value": "Уберите запрос подтверждения",
+      "isVisible": true
+    },
+    {
+      "id": "automation.88e7e7521603",
+      "group": "iOS — автоматизации",
+      "label": "«Выполнять немедленно»",
+      "value": "«Выполнять немедленно»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.313c6947fd09",
+      "group": "iOS — автоматизации",
+      "label": ". В старом интерфейсе отключите",
+      "value": ". В старом интерфейсе отключите ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.e81156776293",
+      "group": "iOS — автоматизации",
+      "label": "«Спрашивать до запуска»",
+      "value": "«Спрашивать до запуска»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.84acb2a7eb25",
+      "group": "iOS — автоматизации",
+      "label": "Добавьте действие",
+      "value": "Добавьте действие",
+      "isVisible": true
+    },
+    {
+      "id": "automation.52e560880c52",
+      "group": "iOS — автоматизации",
+      "label": "Нажмите",
+      "value": "Нажмите ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.e6f0e4bad42c",
+      "group": "iOS — автоматизации",
+      "label": "«Новая пустая автоматизация»",
+      "value": "«Новая пустая автоматизация»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.d8fc89173cfe",
+      "group": "iOS — автоматизации",
+      "label": "или",
+      "value": " или ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.7873ed330498",
+      "group": "iOS — автоматизации",
+      "label": "«Добавить действие»",
+      "value": "«Добавить действие»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.8c52b9db9d44",
+      "group": "iOS — автоматизации",
+      "label": ", найдите приложение и выберите действие.",
+      "value": ", найдите приложение и выберите действие.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.ce2c934c45cc",
+      "group": "iOS — автоматизации",
+      "label": "Сохраните и повторите",
+      "value": "Сохраните и повторите",
+      "isVisible": true
+    },
+    {
+      "id": "automation.b2f0bc4f5f38",
+      "group": "iOS — автоматизации",
+      "label": "«Готово»",
+      "value": "«Готово»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.1826dce4cc63",
+      "group": "iOS — автоматизации",
+      "label": ". В итоге в списке должно быть три записи.",
+      "value": ". В итоге в списке должно быть три записи.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.aeaf770d6a5c",
+      "group": "iOS — расписание",
+      "label": "Запускает VPN до обращения SideStore к службам устройства.",
+      "value": "Запускает VPN до обращения SideStore к службам устройства.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.32934d038e82",
+      "group": "iOS — расписание",
+      "label": "Продлевает подпись SideStore и установленных через него приложений.",
+      "value": "Продлевает подпись SideStore и установленных через него приложений.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.a0e98c233445",
+      "group": "iOS — расписание",
+      "label": "Выключает VPN после завершения обновления.",
+      "value": "Выключает VPN после завершения обновления.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.7f543ce2fc96",
+      "group": "iOS — автоматизации",
+      "label": "После установки",
+      "value": "После установки",
+      "isVisible": true
+    },
+    {
+      "id": "automation.b1105686382e",
+      "group": "iOS — автоматизации",
+      "label": "Настройте автоматическое переподписание.",
+      "value": "Настройте автоматическое переподписание.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.4903c7fa458f",
+      "group": "iOS — автоматизации",
+      "label": "Создайте три отдельные личные автоматизации. Они включат LocalDevVPN, обновят подпись приложений чер",
+      "value": "Создайте три отдельные личные автоматизации. Они включат LocalDevVPN, обновят подпись приложений через SideStore и затем выключат VPN.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.6a2f3d6ec467",
+      "group": "iOS — автоматизации",
+      "label": "Что проверить перед настройкой автоматизации",
+      "value": "Что проверить перед настройкой автоматизации",
+      "isVisible": true
+    },
+    {
+      "id": "automation.71f777c7aec5",
+      "group": "iOS — автоматизации",
+      "label": "SideStore авторизован",
+      "value": "SideStore авторизован",
+      "isVisible": true
+    },
+    {
+      "id": "automation.68bd56fc6612",
+      "group": "iOS — автоматизации",
+      "label": "Ручной Refresh работает",
+      "value": "Ручной Refresh работает",
+      "isVisible": true
+    },
+    {
+      "id": "automation.d5d5ea396751",
+      "group": "iOS — автоматизации",
+      "label": "LocalDevVPN подключается",
+      "value": "LocalDevVPN подключается",
+      "isVisible": true
+    },
+    {
+      "id": "automation.800d648a49c5",
+      "group": "iOS — автоматизации",
+      "label": "iPhone подключён к Wi‑Fi",
+      "value": "iPhone подключён к Wi‑Fi",
+      "isVisible": true
+    },
+    {
+      "id": "automation.936f71cab0a7",
+      "group": "iOS — автоматизации",
+      "label": "Как создать автоматизацию",
+      "value": "Как создать автоматизацию",
+      "isVisible": true
+    },
+    {
+      "id": "automation.51c7105f69a1",
+      "group": "iOS — автоматизации",
+      "label": "Повторите последовательность три раза, меняя только время и действие.",
+      "value": "Повторите последовательность три раза, меняя только время и действие.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.1bd842ab8035",
+      "group": "iOS — автоматизации",
+      "label": "Расписание переподписания",
+      "value": "Расписание переподписания",
+      "isVisible": true
+    },
+    {
+      "id": "automation.8649a346830d",
+      "group": "iOS — автоматизации",
+      "label": "Три отдельные автоматизации",
+      "value": "Три отдельные автоматизации",
+      "isVisible": true
+    },
+    {
+      "id": "automation.f931cf52da0e",
+      "group": "iOS — автоматизации",
+      "label": "Не добавляйте",
+      "value": "Не добавляйте ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.48a51d30e9ed",
+      "group": "iOS — автоматизации",
+      "label": "Stop LocalDevVPN",
+      "value": "Stop LocalDevVPN",
+      "isVisible": true
+    },
+    {
+      "id": "automation.7f5fb5ded4f9",
+      "group": "iOS — автоматизации",
+      "label": "в одну цепочку с",
+      "value": " в одну цепочку с ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.f9215ee1f759",
+      "group": "iOS — автоматизации",
+      "label": "Refresh All Apps",
+      "value": "Refresh All Apps",
+      "isVisible": true
+    },
+    {
+      "id": "automation.bbd09b02da40",
+      "group": "iOS — автоматизации",
+      "label": ": преждевременное отключение VPN может оборвать переподписание.",
+      "value": ": преждевременное отключение VPN может оборвать переподписание.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.f9b832718924",
+      "group": "iOS — автоматизации",
+      "label": "Как проверить и что делать, если автоматизация не сработала",
+      "value": "Как проверить и что делать, если автоматизация не сработала",
+      "isVisible": true
+    },
+    {
+      "id": "automation.a6b2b62b488e",
+      "group": "iOS — автоматизации",
+      "label": "Выполните ручной Refresh в SideStore. В",
+      "value": "Выполните ручной Refresh в SideStore. В ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.ff7e51389550",
+      "group": "iOS — автоматизации",
+      "label": "My Apps",
+      "value": "My Apps",
+      "isVisible": true
+    },
+    {
+      "id": "automation.7d4375830ef0",
+      "group": "iOS — автоматизации",
+      "label": "срок должен снова приблизиться к",
+      "value": " срок должен снова приблизиться к ",
+      "isVisible": true
+    },
+    {
+      "id": "automation.24b6ab7fc4d7",
+      "group": "iOS — автоматизации",
+      "label": "7 DAYS",
+      "value": "7 DAYS",
+      "isVisible": true
+    },
+    {
+      "id": "automation.8009155f524a",
+      "group": "iOS — автоматизации",
+      "label": "Если действия нет в поиске, откройте LocalDevVPN и SideStore хотя бы один раз, затем заново откройте",
+      "value": "Если действия нет в поиске, откройте LocalDevVPN и SideStore хотя бы один раз, затем заново откройте «Быстрые команды».",
+      "isVisible": true
+    },
+    {
+      "id": "automation.26fa93b6ae08",
+      "group": "iOS — автоматизации",
+      "label": "При ошибке Wi‑Fi/VPN проверьте Wi‑Fi, LocalDevVPN, авторизацию SideStore и временно отключите DNS-бл",
+      "value": "При ошибке Wi‑Fi/VPN проверьте Wi‑Fi, LocalDevVPN, авторизацию SideStore и временно отключите DNS-блокировщик.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.cea2c17a3580",
+      "group": "iOS — автоматизации",
+      "label": "После обновления или сброса iPhone pairing file может стать недействительным — замените его через il",
+      "value": "После обновления или сброса iPhone pairing file может стать недействительным — замените его через iloader.",
+      "isVisible": true
+    },
+    {
+      "id": "automation.079505fb637d",
+      "group": "iOS — автоматизации",
+      "label": "Подробнее:",
+      "value": "Подробнее:",
+      "isVisible": true
+    },
+    {
+      "id": "automation.0464c9e0ea7a",
+      "group": "iOS — автоматизации",
+      "label": "автоматизации в «Быстрых командах»",
+      "value": "автоматизации в «Быстрых командах»",
+      "isVisible": true
+    },
+    {
+      "id": "automation.eead37caf818",
+      "group": "iOS — автоматизации",
+      "label": "и",
+      "value": "и",
+      "isVisible": true
+    },
+    {
+      "id": "automation.8791fa221161",
+      "group": "iOS — автоматизации",
+      "label": "решение проблем SideStore",
+      "value": "решение проблем SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "faq.9219bf1a7de1",
+      "group": "Помощь — частые вопросы",
+      "label": "Как установить приложение на Android?",
+      "value": "Как установить приложение на Android?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.c4b1ee1516bf",
+      "group": "Помощь — частые вопросы",
+      "label": "Скачайте APK в разделе Android, откройте файл и разрешите браузеру установку неизвестных приложений,",
+      "value": "Скачайте APK в разделе Android, откройте файл и разрешите браузеру установку неизвестных приложений, если система попросит.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.df044a3267f7",
+      "group": "Помощь — частые вопросы",
+      "label": "Какая версия Android требуется?",
+      "value": "Какая версия Android требуется?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.c86349e53cc2",
+      "group": "Помощь — частые вопросы",
+      "label": "Поддерживается Android 8.0 или новее. Интерфейс адаптирован для телефонов и планшетов в портретной о",
+      "value": "Поддерживается Android 8.0 или новее. Интерфейс адаптирован для телефонов и планшетов в портретной ориентации.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.86d93d10a1ac",
+      "group": "Помощь — частые вопросы",
+      "label": "Нужно ли удалять Android-версию перед обновлением?",
+      "value": "Нужно ли удалять Android-версию перед обновлением?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.c9a4f6ff1f8f",
+      "group": "Помощь — частые вопросы",
+      "label": "Нет. Устанавливайте новый подписанный APK поверх текущей версии, чтобы сохранить локальные данные.",
+      "value": "Нет. Устанавливайте новый подписанный APK поверх текущей версии, чтобы сохранить локальные данные.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.b5e01e6c6500",
+      "group": "Помощь — частые вопросы",
+      "label": "Какая версия iOS требуется?",
+      "value": "Какая версия iOS требуется?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.af7479d795db",
+      "group": "Помощь — частые вопросы",
+      "label": "«Инженер» поддерживается только на устройствах с iOS 26.2 или новее. На более ранних версиях установ",
+      "value": "«Инженер» поддерживается только на устройствах с iOS 26.2 или новее. На более ранних версиях установка или запуск невозможны.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.864886c8b34f",
+      "group": "Помощь — частые вопросы",
+      "label": "Кнопка не открывает SideStore",
+      "value": "Кнопка не открывает SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "faq.22a9eb0cc24d",
+      "group": "Помощь — частые вопросы",
+      "label": "Убедитесь, что SideStore уже установлен. Затем скопируйте адрес источника и добавьте его вручную в р",
+      "value": "Убедитесь, что SideStore уже установлен. Затем скопируйте адрес источника и добавьте его вручную в разделе Sources.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.00605fa3675f",
+      "group": "Помощь — частые вопросы",
+      "label": "Нужно ли удалять iOS-версию перед обновлением?",
+      "value": "Нужно ли удалять iOS-версию перед обновлением?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.3dcbb3277ad2",
+      "group": "Помощь — частые вопросы",
+      "label": "Нет. Устанавливайте новую версию поверх текущей через SideStore, чтобы сохранить локальные данные пр",
+      "value": "Нет. Устанавливайте новую версию поверх текущей через SideStore, чтобы сохранить локальные данные приложения.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.594b6cbd331d",
+      "group": "Помощь — частые вопросы",
+      "label": "Почему приложение перестало открываться?",
+      "value": "Почему приложение перестало открываться?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.60b9e00bed04",
+      "group": "Помощь — частые вопросы",
+      "label": "Возможно, закончился срок действия подписи. Подключитесь к Wi‑Fi, включите LocalDevVPN и выполните R",
+      "value": "Возможно, закончился срок действия подписи. Подключитесь к Wi‑Fi, включите LocalDevVPN и выполните Refresh в SideStore.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.34f6e3083452",
+      "group": "Помощь — частые вопросы",
+      "label": "Где появится новая версия?",
+      "value": "Где появится новая версия?",
+      "isVisible": true
+    },
+    {
+      "id": "faq.5d3aa777c591",
+      "group": "Помощь — частые вопросы",
+      "label": "Обновление появится в SideStore внутри добавленного источника. При необходимости обновите список Sou",
+      "value": "Обновление появится в SideStore внутри добавленного источника. При необходимости обновите список Sources вручную.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.9c82db56bc5e",
+      "group": "Помощь — частые вопросы",
+      "label": "Иконка приложения «Инженер»",
+      "value": "Иконка приложения «Инженер»",
+      "isVisible": true
+    },
+    {
+      "id": "faq.97adbf93d8ec",
+      "group": "Помощь — частые вопросы",
+      "label": "«Инженер» готов к установке.",
+      "value": "«Инженер» готов к установке.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.32b7f26810a2",
+      "group": "Помощь — частые вопросы",
+      "label": "Добавьте источник в SideStore и установите приложение.",
+      "value": "Добавьте источник в SideStore и установите приложение.",
+      "isVisible": true
+    },
+    {
+      "id": "faq.9cb5f087c2b8",
+      "group": "Помощь — частые вопросы",
+      "label": "Добавить в SideStore",
+      "value": "Добавить в SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "faq.36f798a63c92",
+      "group": "Помощь — частые вопросы",
+      "label": "Помощь",
+      "value": "Помощь",
+      "isVisible": true
+    },
+    {
+      "id": "faq.bf9560c861ef",
+      "group": "Помощь — частые вопросы",
+      "label": "Частые вопросы.",
+      "value": "Частые вопросы.",
+      "isVisible": true
+    },
+    {
+      "id": "app.276d35c116d8",
+      "group": "Подвал",
+      "label": "Android APK",
+      "value": "Android APK",
+      "isVisible": true
+    },
+    {
+      "id": "app.38fdf519314e",
+      "group": "Главная — установка",
+      "label": "iPhone",
+      "value": "iPhone",
+      "isVisible": true
+    },
+    {
+      "id": "header.355f5e748485",
+      "group": "Навигация",
+      "label": "iOS",
+      "value": "iOS",
+      "isVisible": true
+    },
+    {
+      "id": "header.6d612a86bee4",
+      "group": "Навигация",
+      "label": "Android",
+      "value": "Android",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.355f5e748485",
+      "group": "Превью приложения",
+      "label": "iOS",
+      "value": "iOS",
+      "isVisible": true
+    },
+    {
+      "id": "productpreview.6d612a86bee4",
+      "group": "Превью приложения",
+      "label": "Android",
+      "value": "Android",
+      "isVisible": true
+    },
+    {
+      "id": "androiddownload.bfcee7f086b4",
+      "group": "Android — релиз",
+      "label": "(Android 8.0+)",
+      "value": " (Android 8.0+)",
+      "isVisible": true
+    },
+    {
+      "id": "installation.587a02a52965",
+      "group": "iOS — полная установка",
+      "label": "SideStore",
+      "value": "SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "installation.651d9a6c2fa8",
+      "group": "iOS — установка",
+      "label": "Wi‑Fi",
+      "value": "Wi‑Fi",
+      "isVisible": true
+    },
+    {
+      "id": "installation.4808b90e46ad",
+      "group": "iOS — установка",
+      "label": "Apple Account",
+      "value": "Apple Account",
+      "isVisible": true
+    },
+    {
+      "id": "automation.20677a31b4a8",
+      "group": "iOS — расписание",
+      "label": "03:00",
+      "value": "03:00",
+      "isVisible": true
+    },
+    {
+      "id": "automation.d8d6736fe704",
+      "group": "iOS — расписание",
+      "label": "LocalDevVPN",
+      "value": "LocalDevVPN",
+      "isVisible": true
+    },
+    {
+      "id": "automation.d5f71b796125",
+      "group": "iOS — расписание",
+      "label": "Start LocalDevVPN",
+      "value": "Start LocalDevVPN",
+      "isVisible": true
+    },
+    {
+      "id": "automation.e89fed261d00",
+      "group": "iOS — расписание",
+      "label": "03:02",
+      "value": "03:02",
+      "isVisible": true
+    },
+    {
+      "id": "automation.587a02a52965",
+      "group": "iOS — расписание",
+      "label": "SideStore",
+      "value": "SideStore",
+      "isVisible": true
+    },
+    {
+      "id": "automation.92c5b0ebea8b",
+      "group": "iOS — расписание",
+      "label": "03:30",
+      "value": "03:30",
+      "isVisible": true
+    }
+  ]
+}

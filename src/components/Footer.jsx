@@ -11,6 +11,7 @@ export default function Footer() {
         </p>
         <nav aria-label="Навигация в подвале">
           <a href="#features">Приложение</a>
+          <a href="#android">Android</a>
           <a href="#installation">Установка</a>
           <a href="#automation">Автоматизация</a>
           <a href="#faq">Помощь</a>

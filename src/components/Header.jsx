@@ -1,103 +1,76 @@
+import { SiteLink, useSite } from "../SiteContent";
 import { useEffect, useRef, useState } from "react";
-
-export const SIDESTORE_URL = "sidestore://source?url=https%3A%2F%2Fapp.lumastack.ru%2Fsource.json";
+export const SIDESTORE_URL =
+  "sidestore://source?url=https%3A%2F%2Fapp.lumastack.ru%2Fsource.json";
 export const SOURCE_URL = "https://app.lumastack.ru/source.json";
-
-export function Brand({ className = "" }) {
+export function Brand() {
+  const { text: copy } = useSite();
   return (
-    <a className={`brand ${className}`.trim()} href="#top" aria-label="Инженер — в начало страницы">
-      <img src="/assets/app-icon.webp" width="1024" height="1024" alt="" />
-      <span>Инженер</span>
-    </a>
+    <SiteLink className="brand" href="/" aria-label={copy("header.8217da0e3f79", "Инженер — главная")}>
+      <img src="/assets/app-icon.webp" width="40" height="40" alt="" />
+      <span>{copy("header.88d71676fa80", "Инженер")}</span>
+    </SiteLink>
   );
 }
-
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const toggleRef = useRef(null);
-  const navRef = useRef(null);
-
+  const { text: copy } = useSite();
+  const [open, setOpen] = useState(false);
+  const headerRef = useRef(null);
   useEffect(() => {
-    const updateHeader = () => setIsScrolled(window.scrollY > 42);
-    updateHeader();
-    window.addEventListener("scroll", updateHeader, { passive: true });
-    return () => window.removeEventListener("scroll", updateHeader);
-  }, []);
-
-  useEffect(() => {
-    document.body.classList.toggle("menu-open", isOpen);
-
-    const onKeyDown = (event) => {
-      if (event.key === "Escape" && isOpen) {
-        setIsOpen(false);
-        toggleRef.current?.focus();
-      }
+    if (!open) return;
+    const closeOutside = (event) => {
+      if (!headerRef.current?.contains(event.target)) setOpen(false);
     };
-    const onPointerDown = (event) => {
-      if (isOpen && !navRef.current?.contains(event.target)) setIsOpen(false);
-    };
-    const onResize = () => {
-      if (window.innerWidth > 900) setIsOpen(false);
-    };
-
-    document.addEventListener("keydown", onKeyDown);
-    document.addEventListener("pointerdown", onPointerDown);
-    window.addEventListener("resize", onResize, { passive: true });
-    return () => {
-      document.body.classList.remove("menu-open");
-      document.removeEventListener("keydown", onKeyDown);
-      document.removeEventListener("pointerdown", onPointerDown);
-      window.removeEventListener("resize", onResize);
-    };
-  }, [isOpen]);
-
+    document.addEventListener("pointerdown", closeOutside);
+    return () => document.removeEventListener("pointerdown", closeOutside);
+  }, [open]);
+  const path = window.location.pathname.replace(/\/$/, "") || "/";
   return (
-    <header className={`site-header${isScrolled ? " is-scrolled" : ""}`} id="site-header">
-      <nav ref={navRef} className="nav-shell" aria-label="Основная навигация">
+    <header ref={headerRef} className="portal-header">
+      <div className="container portal-nav">
         <Brand />
-
-        <div className="nav-links" id="desktop-navigation">
-          <a href="#features">Приложение</a>
-          <a href="#screenshots">Интерфейс</a>
-          <a className="nav-install-link" href="#installation">Установка</a>
-        </div>
-
-        <a className="button button-primary nav-cta" href={SIDESTORE_URL}>
-          Добавить в SideStore
-        </a>
-
-        <a className="mobile-install-link" href="#installation">Установка</a>
         <button
-          ref={toggleRef}
-          className="menu-toggle"
+          className="menu-button"
           type="button"
-          aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
-          aria-expanded={isOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setIsOpen((value) => !value)}
-        >
-          <span />
-          <span />
-        </button>
-
-        <div
-          className="mobile-navigation"
-          id="mobile-navigation"
-          data-open={isOpen}
-          aria-hidden={!isOpen}
-          onClick={(event) => {
-            if (event.target.closest("a")) setIsOpen(false);
+          aria-expanded={open}
+          aria-controls="portal-links"
+          onClick={() => setOpen(!open)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setOpen(false);
           }}
         >
-          <a href="#features">Приложение</a>
-          <a href="#screenshots">Интерфейс</a>
-          <a href="#installation">Установка</a>
-          <a className="button button-primary" href={SIDESTORE_URL}>
-            Добавить в SideStore
-          </a>
-        </div>
-      </nav>
+          <span className="menu-glyph" aria-hidden="true"><i /><i /></span>
+          <span>{open ? copy("header.a7a4033657e8", "Закрыть") : copy("header.122f71765026", "Меню")}</span>
+        </button>
+        <nav
+          id="portal-links"
+          className={open ? "portal-links open" : "portal-links"}
+          aria-label={copy("header.8fff0bba4454", "Основная навигация")}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") {
+              setOpen(false);
+              document.querySelector(".menu-button")?.focus();
+            }
+          }}
+        >
+          {[
+            ["/", copy("header.26b855cc1660", "Приложение")],
+            ["/ios", copy("header.355f5e748485", "iOS")],
+            ["/android", copy("header.6d612a86bee4", "Android")],
+            ["/changelog", copy("header.455471db0cfb", "Обновления")],
+            ["/help", copy("header.36f798a63c92", "Помощь")],
+          ].map(([url, label]) => (
+            <SiteLink
+              key={url}
+              href={url}
+              aria-current={path === url ? "page" : undefined}
+            >
+              {label}
+            </SiteLink>
+          ))}
+        </nav>
+        <SiteLink className="button button-primary header-download" href="/#download">{copy("header.b7cd6fae08d9", "Установить")}</SiteLink>
+      </div>
     </header>
   );
 }
