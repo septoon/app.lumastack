@@ -1,11 +1,42 @@
-Device artwork used by app.lumastack.ru
+Авторы и лицензии — app.lumastack.ru
 
-iPhone 15 Pro Max Black — polyman / Polyman_3D
-https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
-CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-Existing project model rendered into a still image with studio lighting and the actual Engineer app screenshot. Screen UV orientation adjusted for the external image.
-The separate device-iphone-frame.webp and device-iphone-screen-mask.svg use the same model and studio pose; current admin screenshots are projected into its display. Regenerate with scripts/render-iphone.py --frame in Blender.
+Apple iPhone 15 Pro Max Black
+Автор: polyman Studio / Polyman_3D
+Профиль: https://sketchfab.com/Polyman_3D
+Оригинал: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
+Лицензия: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Изменения: существующая локальная копия public/models/iphone.glb содержит выделенную
+поверхность Screen. Для интерактивной презентации добавлены нормализация масштаба,
+студийное освещение, управление вращением и текстура актуального скриншота приложения.
+Оригинальные детали корпуса, камеры и материалы сохранены; материал дисплея заменяется
+во время работы. Геометрия не упрощалась.
+Статичные device-iphone-frame.webp и device-iphone-screen-mask.svg получены из той же
+модели и остаются в мобильных превью и резервном представлении. В них скриншот
+проектируется на дисплей; ориентация UV адаптирована для внешнего изображения.
+scene.glb — сжатый исходный iPhone того же автора, не модель Samsung.
 
-Google Pixel 9 Pro device artwork — Google, bundled Android Studio device-art-resources/pixel_9_pro/back.webp.
+Samsung Galaxy S21 Ultra
+Автор: DatSketch
+Профиль: https://sketchfab.com/DatSketch
+Оригинал: https://sketchfab.com/3d-models/samsung-galaxy-s21-ultra-cd962832be7744efb6b37fe0ee2027e7
+Лицензия: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Локальная копия: public/models/samsung.glb, предоставлена пользователем из Sketchfab;
+встроенные метаданные GLB подтверждают автора, исходный URL и лицензию.
+Изменения во время работы: нормализация масштаба и ориентации, студийное освещение,
+интерактивное вращение, замена материала Screen_Screen_0 актуальным скриншотом
+приложения и планарная UV-проекция дисплея вместо исходной развёртки обоев.
+Геометрия дисплея, вырез фронтальной камеры, корпус, объективы, динамики и остальные
+материалы сохранены. Геометрия GLB не упрощалась, исходный файл не изменён.
+
+Условия обеих моделей проверены 27 октября 2026 года по публичному Sketchfab API
+/v3/models/{id}: CC Attribution, ссылка на CC BY 4.0; разрешено коммерческое
+использование при указании автора, лицензии и внесённых изменений.
+Указание авторства не означает поддержку авторами этого сайта или приложения.
+
+Дополнительные статичные материалы резервного и мобильного представления:
+Google Pixel 9 Pro — Google, Android Studio device-art-resources/pixel_9_pro/back.webp.
 https://developer.android.com/distribute/marketing-tools/device-art-generator
-Presented at a fixed angle, with the current admin screenshot composited into the display. Existing screenshot captions identify temporary platform images.
+Текущий Android-скриншот помещается в дисплей статичного макета. Это резервный макет
+Pixel, а не интерактивная модель Samsung. Подписи временных скриншотов управляются API.

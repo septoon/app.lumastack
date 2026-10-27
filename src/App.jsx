@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, m } from "motion/react";
 import SiteLoader from "./components/SiteLoader";
-import FeaturePresentation from "./components/FeaturePresentation";
 import SpotlightCard from "./components/SpotlightCard";
 import { SiteContext, SiteSection, SiteLink, useSite } from "./SiteContent";
 import { fetchSiteConfig, pageVisible, releaseTextID, siteText } from "./siteConfig";
@@ -40,7 +39,7 @@ function Footer() {
         ))}
         <SiteLink href="/source.json">{copy("app.e717b58a22e2", "Источник SideStore")}</SiteLink>
       </nav>
-      <p className="artwork-credit">iPhone: <SiteLink href="https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7">polyman / Polyman_3D</SiteLink>, <SiteLink href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</SiteLink>. Адаптированный рендер.</p>
+      <p className="artwork-credit"><SiteLink href="/assets/device-credits.txt">Авторы и лицензии</SiteLink></p>
       </div>
     </footer>
   );
@@ -145,8 +144,8 @@ function Home({ android, ios, reducedMotion }) {
   const platform = platforms.includes(selectedPlatform) ? selectedPlatform : platforms[0];
   return (
     <>
-      <SiteSection id="home.hero"><Hero platform={platform} onPlatformChange={setPlatform} /></SiteSection>
-      <SiteSection id="home.features"><FeaturePresentation reducedMotion={reducedMotion} platform={platform} /></SiteSection>
+      <SiteSection id="home.hero"><Hero platform={platform} onPlatformChange={setPlatform} showFeatures={false} /></SiteSection>
+      {/* «От заявки до отчёта» временно скрыт: его 3D-сцены не монтируются. */}
       <SiteSection id="home.workflow"><section className="workflow-section">
         <div className="container">
           <h2>{copy("app.2d3f8d7cb1dc", "Приложение на каждом этапе работы")}</h2>

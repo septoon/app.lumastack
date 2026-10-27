@@ -495,3 +495,54 @@ summary { cursor: pointer; padding-block: 16px; font-size: 15px; }
   .device-iphone { width: min(100cqw, calc(112cqh * 760 / 1300)); }
   .device-pixel { width: min(100cqw, calc(100cqh * 1408 / 2974)); }
 }
+
+/* Both presentations share a persistent, transparent WebGL stage. The fallback
+   stays underneath until the physical model and its display have been prepared. */
+.phone-presentation { width: 100%; height: 100%; position: relative; isolation: isolate; touch-action: pan-y; overflow: clip; }
+.phone-presentation .phone-webgl { position: absolute !important; inset: 0; pointer-events: none; opacity: 0; transition: opacity 240ms var(--ease-out); }
+.phone-presentation.is-ready .phone-webgl { opacity: 1; }
+.phone-static-fallback, .phone-static-loading { container-type: size; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.phone-static-fallback { opacity: 1; transition: opacity 180ms var(--ease-out); }
+.phone-presentation.is-ready .phone-static-fallback { opacity: 0; pointer-events: none; visibility: hidden; transition: opacity 180ms var(--ease-out), visibility 0s 180ms; }
+.phone-empty { display: grid; justify-items: center; align-content: center; gap: 20px; height: 88%; aspect-ratio: 9 / 19.5; padding: 24px; border: 2px solid var(--line-strong); border-radius: 32px; background: var(--bg-soft); text-align: center; color: var(--muted); font-size: 13px; }
+.phone-empty img { border-radius: 16px; }
+.is-hero-preview .preview-device { height: clamp(430px, 50vw, 540px); }
+.is-hero-preview .preview-caption { margin-bottom: 8px; }
+.is-hero-preview .managed-preview-copy { margin-top: 6px; }
+.feature-device-depth > .phone-presentation { height: 100%; }
+@media (max-width: 1100px) { .is-hero-preview .preview-device { height: 440px; } }
+@media (max-width: 600px) { .is-hero-preview .preview-device { height: 420px; } }
+@media (max-height: 560px) and (min-width: 901px) { .feature-screen-sticky { top: 88px; height: calc(100svh - 104px); } }
+@media (prefers-reduced-motion: reduce) {
+  .phone-presentation .phone-webgl, .phone-static-fallback { transition: none; }
+}
+.device-screen-placeholder { display: grid; place-items: center; width: 100%; height: 100%; min-height: 180px; color: var(--mint); background: var(--bg-soft); border-radius: inherit; }
+.hero-word-highlight { background: #bccdfb; color: #101114; padding-inline: .025em; line-height: 1.12; }
+
+/* Each chapter owns its screen; all three 3D views share one WebGL renderer. */
+.feature-chapter-list { position: relative; }
+.feature-chapter-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6%; min-height: 0; padding-block: 40px; }
+.feature-chapter-row.has-image { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+.feature-chapter-row .chapter-copy { min-width: 0; position: relative; z-index: 3; }
+.feature-chapter-row .chapter-copy p { max-width: 420px; }
+.chapter-device { min-width: 0; position: relative; isolation: isolate; }
+.chapter-phone-stage { position: relative; width: 100%; height: clamp(420px, 40vw, 540px); }
+.chapter-device-caption { max-width: 380px; min-height: 32px; margin: 8px auto 0; text-align: center; color: var(--muted); font-size: 12px; }
+.chapter-device-caption strong { font-weight: 500; color: var(--text); }
+.chapter-device-caption p { max-width: none; margin: 6px 0 0; font-size: 11px; line-height: 1.5; }
+.phone-shared-view { position: absolute; inset: 0; pointer-events: none; }
+.feature-phone-canvas { position: fixed !important; inset: 0; pointer-events: none; z-index: 2; }
+.feature-phone-canvas canvas { pointer-events: none; }
+@media (min-width: 901px) {
+  .feature-chapter-row.has-image:nth-child(odd) .chapter-device { grid-column: 1; grid-row: 1; }
+  .feature-chapter-row.has-image:nth-child(odd) .chapter-copy { grid-column: 2; grid-row: 1; }
+}
+@media (max-width: 900px) {
+  .feature-chapter-row.has-image { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+  .chapter-phone-stage { height: 400px; }
+}
+@media (max-width: 600px) {
+  .feature-chapter-row.has-image { grid-template-columns: minmax(0, 1fr); gap: 20px; padding-block: 32px; }
+  .chapter-phone-stage { height: 380px; }
+  .feature-chapter-row .chapter-copy p { max-width: none; }
+}
