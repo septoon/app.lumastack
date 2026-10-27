@@ -1,8 +1,10 @@
 """Render the existing iPhone GLB once; no WebGL is needed by the website."""
 from pathlib import Path
 import math
+import sys
 import bpy
 from mathutils import Vector
+from bpy_extras.object_utils import world_to_camera_view
 
 root = Path(__file__).resolve().parents[1]
 bpy.ops.object.select_all(action='SELECT')
@@ -69,4 +71,39 @@ scene.render.image_settings.file_format = 'WEBP'
 scene.render.image_settings.color_mode = 'RGBA'
 scene.render.image_settings.quality = 94
 scene.render.filepath = str(root / 'public/assets/device-iphone.webp')
+if '--frame' in sys.argv:
+    # Keep the model's rounded screen and camera cutout as an SVG mask. Fit its
+    # UVs to the orthographic camera so any admin screenshot uses the same pose.
+    import numpy as np
+    bpy.context.view_layer.update()
+    width, height = scene.render.resolution_x, scene.render.resolution_y
+    rows, points, paths = [], [], []
+    for polygon in screen.data.polygons:
+        outline = []
+        for index in polygon.loop_indices:
+            loop = screen.data.loops[index]
+            uv = screen.data.uv_layers.active.data[index].uv
+            vertex = screen.data.vertices[loop.vertex_index]
+            point = world_to_camera_view(scene, camera, screen.matrix_world @ vertex.co)
+            x, y = point.x * width, (1 - point.y) * height
+            rows.append([uv.x, 1 - uv.y, 1])
+            points.append([x, y])
+            outline.append(f'{x:.3f},{y:.3f}')
+        paths.append('M' + 'L'.join(outline) + 'Z')
+    coefficients = np.linalg.lstsq(np.array(rows), np.array(points), rcond=None)[0]
+    error = np.max(np.abs(np.array(rows) @ coefficients - np.array(points)))
+    if error > 0.5:
+        raise RuntimeError(f'Screen projection error: {error:.3f}px')
+    (a, d), (b, e), (c, f) = coefficients
+    print(f'Screen CSS: left:{c / width * 100:.7f}%;top:{f / height * 100:.7f}%;'
+          f'transform:matrix({a / width:.9f},{d / width:.9f},'
+          f'{b / height:.9f},{e / height:.9f},0,0)')
+    mask = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}">'
+            '<path fill="white" d="' + ''.join(paths) + '"/></svg>')
+    (root / 'public/assets/device-iphone-screen-mask.svg').write_text(mask)
+    nodes.clear()
+    output = nodes.new('ShaderNodeOutputMaterial')
+    holdout = nodes.new('ShaderNodeHoldout')
+    material.node_tree.links.new(holdout.outputs[0], output.inputs['Surface'])
+    scene.render.filepath = str(root / 'public/assets/device-iphone-frame.webp')
 bpy.ops.render.render(write_still=True)

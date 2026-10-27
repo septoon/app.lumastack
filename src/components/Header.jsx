@@ -1,4 +1,6 @@
 import { SiteLink, useSite } from "../SiteContent";
+import { m } from "motion/react";
+import { useReducedMotion } from "../hooks/useReducedMotion";
 import { useEffect, useRef, useState } from "react";
 export const SIDESTORE_URL =
   "sidestore://source?url=https%3A%2F%2Fapp.lumastack.ru%2Fsource.json";
@@ -15,6 +17,14 @@ export function Brand() {
 export default function Header() {
   const { text: copy } = useSite();
   const [open, setOpen] = useState(false);
+  const reduced = useReducedMotion();
+  const [mobile, setMobile] = useState(() => window.matchMedia("(max-width: 900px)").matches);
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 900px)");
+    const update = () => { setMobile(query.matches); if (!query.matches) setOpen(false); };
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
   const headerRef = useRef(null);
   useEffect(() => {
     if (!open) return;
@@ -29,9 +39,15 @@ export default function Header() {
     <header ref={headerRef} className="portal-header">
       <div className="container portal-nav">
         <Brand />
-        <button
+        <m.button
+          data-motion-button=""
+          whileHover={reduced ? undefined : { scale: 1.05, backgroundColor: "#39344d" }}
+          whileTap={reduced ? undefined : { scale: 0.9, rotate: open ? -4 : 4 }}
+          animate={{ backgroundColor: open ? "#39344d" : "#242332", borderColor: open ? "#a9a1cc" : "#4b465e" }}
+          transition={{ type: "spring", stiffness: 420, damping: 25 }}
           className="menu-button"
           type="button"
+          aria-label={open ? copy("header.a7a4033657e8", "Закрыть") : copy("header.122f71765026", "Меню")}
           aria-expanded={open}
           aria-controls="portal-links"
           onClick={() => setOpen(!open)}
@@ -39,11 +55,19 @@ export default function Header() {
             if (e.key === "Escape") setOpen(false);
           }}
         >
-          <span className="menu-glyph" aria-hidden="true"><i /><i /></span>
+          <svg className="menu-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+            <m.path initial={false} animate={{ d: open ? "M6 6L18 18" : "M4 8L20 8" }} transition={{ duration: reduced ? 0 : 0.25, ease: [0.22, 1, 0.36, 1] }} />
+            <m.path initial={false} animate={{ d: open ? "M6 18L18 6" : "M8 16L20 16" }} transition={{ duration: reduced ? 0 : 0.25, ease: [0.22, 1, 0.36, 1] }} />
+          </svg>
           <span>{open ? copy("header.a7a4033657e8", "Закрыть") : copy("header.122f71765026", "Меню")}</span>
-        </button>
-        <nav
+        </m.button>
+        <m.nav
           id="portal-links"
+          initial={false}
+          inert={mobile && !open ? true : undefined}
+          aria-hidden={mobile && !open}
+          animate={!mobile || open ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: reduced ? 0 : -12, scale: reduced ? 1 : 0.97 }}
+          transition={reduced ? { duration: 0 } : { type: "spring", stiffness: 380, damping: 30 }}
           className={open ? "portal-links open" : "portal-links"}
           aria-label={copy("header.8fff0bba4454", "Основная навигация")}
           onKeyDown={(e) => {
@@ -68,7 +92,7 @@ export default function Header() {
               {label}
             </SiteLink>
           ))}
-        </nav>
+        </m.nav>
         <SiteLink className="button button-primary header-download" href="/#download">{copy("header.b7cd6fae08d9", "Установить")}</SiteLink>
       </div>
     </header>

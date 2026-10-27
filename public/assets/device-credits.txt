@@ -4,7 +4,8 @@ iPhone 15 Pro Max Black — polyman / Polyman_3D
 https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 Existing project model rendered into a still image with studio lighting and the actual Engineer app screenshot. Screen UV orientation adjusted for the external image.
+The separate device-iphone-frame.webp and device-iphone-screen-mask.svg use the same model and studio pose; current admin screenshots are projected into its display. Regenerate with scripts/render-iphone.py --frame in Blender.
 
 Google Pixel 9 Pro device artwork — Google, bundled Android Studio device-art-resources/pixel_9_pro/back.webp.
 https://developer.android.com/distribute/marketing-tools/device-art-generator
-Presented at a fixed angle, with a placeholder instead of an Android app screenshot.
+Presented at a fixed angle, with the current admin screenshot composited into the display. Existing screenshot captions identify temporary platform images.

@@ -59,10 +59,6 @@ export default function AndroidDownload({ state }) {
             download
           >{copy("androiddownload.3e5bd8d625a6", "Скачать APK · ")}{formatSize(r.size)}
           </SiteLink>
-          <details className="checksum">
-            <summary>{copy("androiddownload.1d62012e3b8e", "Контрольная сумма SHA-256")}</summary>
-            <code>{r.sha256}</code>
-          </details>
           <h3>{copy("androiddownload.bc016a1cbc97", "Что изменилось")}</h3>
           <ul>
             {r.changelog.map((value, index) => ({ index, value: copy(releaseTextID("android", r, index), value) })).filter(note => note.value).map(note => <li key={note.index}>{note.value}</li>)}

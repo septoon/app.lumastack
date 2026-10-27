@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { AnimatePresence, m } from "motion/react";
+import SiteLoader from "./components/SiteLoader";
+import FeaturePresentation from "./components/FeaturePresentation";
+import SpotlightCard from "./components/SpotlightCard";
 import { SiteContext, SiteSection, SiteLink, useSite } from "./SiteContent";
 import { fetchSiteConfig, pageVisible, releaseTextID, siteText } from "./siteConfig";
 import Header, { SIDESTORE_URL } from "./components/Header";
@@ -27,6 +31,7 @@ function Footer() {
         <SiteLink className="brand" href="/">{copy("app.88d71676fa80", "Инженер")}</SiteLink>
         <p>{copy("app.59b7bb731c07", "Рабочий день под контролем.")}</p>
       </div>
+      <div className="footer-resources">
       <nav aria-label={copy("app.b1bde02cc6d6", "Навигация в подвале")}>
         {navigation(copy).map(([url, text]) => (
           <SiteLink href={url} key={url}>
@@ -34,16 +39,15 @@ function Footer() {
           </SiteLink>
         ))}
         <SiteLink href="/source.json">{copy("app.e717b58a22e2", "Источник SideStore")}</SiteLink>
-        <SiteLink href="/assets/device-credits.txt">{copy("app.253dfdd723c0", "Авторы графики")}</SiteLink>
       </nav>
+      <p className="artwork-credit">iPhone: <SiteLink href="https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7">polyman / Polyman_3D</SiteLink>, <SiteLink href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</SiteLink>. Адаптированный рендер.</p>
+      </div>
     </footer>
   );
 }
 function PageIntro({ title, text }) {
-  const { text: copy } = useSite();
   return (
     <div className="container page-intro">
-      <SiteLink className="text-link" href="/">{copy("app.d328e53dc456", "Главная")}</SiteLink>
       <h1>{title}</h1>
       <p>{text}</p>
     </div>
@@ -86,16 +90,9 @@ function IOSRelease({ state }) {
     </section>
   );
 }
-function Platforms({ android, ios }) {
+function Platforms({ android, ios, selected }) {
   const { text: copy } = useSite();
   const {site} = useSite();
-  const [selected, setSelected] = useState(() =>
-    /android/i.test(navigator.userAgent)
-      ? "android"
-      : /iPhone|iPad|iPod/.test(navigator.userAgent)
-        ? "ios"
-        : "",
-  );
   return (
     <section className="container portal-section" id="download">
       <div className="section-heading">
@@ -103,27 +100,13 @@ function Platforms({ android, ios }) {
           <h2>{copy("app.0c107994ef84", "Установите на своё устройство")}</h2>
           <p>{copy("app.939aca016a9f", "Один рабочий инструмент. Два способа установки.")}</p>
         </div>
-        <div
-          className="platform-switch"
-          role="group"
-          aria-label={copy("app.52d21f4ef2e0", "Ваша платформа")}
-        >
-          <button
-            aria-pressed={selected === "ios"}
-            onClick={() => setSelected("ios")}
-          >{copy("app.355f5e748485", "iOS")}</button>
-          <button
-            aria-pressed={selected === "android"}
-            onClick={() => setSelected("android")}
-          >{copy("app.6d612a86bee4", "Android")}</button>
-        </div>
       </div>
       <div className="platform-grid">
         {[
           ["ios", copy("app.38fdf519314e", "iPhone"), copy("app.517896f01ddc", "Через SideStore"), ios],
           ["android", copy("app.6d612a86bee4", "Android"), copy("app.1f674e4155c3", "APK без магазина приложений"), android],
         ].filter(([id]) => pageVisible(site, `/${id}`)).map(([id, title, description, state]) => (
-          <article
+          <SpotlightCard
             className={`platform-card ${selected === id ? "selected" : ""}`}
             key={id}
           >
@@ -149,68 +132,21 @@ function Platforms({ android, ios }) {
             <SiteLink className="button button-secondary" href={`/${id}`}>
               {id === "ios" ? copy("app.7813a4bb264e", "Установка на iPhone") : copy("app.a53c123ec7d6", "Релиз и установка APK")}
             </SiteLink>
-          </article>
+          </SpotlightCard>
         ))}
       </div>
     </section>
   );
 }
-function features(copy) { return [
-  [
-    copy("app.9a7abebf0298", "Заявки и маршрут"),
-    copy("app.1cd02d7980dd", "Откройте активные заявки, проверьте адреса и постройте маршрут в Яндекс.Картах."),
-    "/assets/screen-home.webp",
-  ],
-  [
-    copy("app.92d3172779f8", "Рабочие инструкции"),
-    copy("app.c7e763c2819f", "Найдите нужную информацию в Wiki, пока работаете на объекте."),
-    "/assets/screen-wiki.webp",
-  ],
-  [
-    copy("app.b901d703c038", "Результаты дня"),
-    copy("app.8efde53732ab", "Соберите данные о пробеге, заправках и выполненной работе."),
-    "/assets/screen-analytics.webp",
-  ],
-]; }
 function Home({ android, ios, reducedMotion }) {
-  const { text: copy } = useSite();
-  const {site, screenshots} = useSite();
-  const images = screenshots("ios");
+  const { text: copy, site } = useSite();
+  const [selectedPlatform, setPlatform] = useState(() => /android/i.test(navigator.userAgent) ? "android" : "ios");
+  const platforms = ["ios", "android"].filter(id => pageVisible(site, `/${id}`));
+  const platform = platforms.includes(selectedPlatform) ? selectedPlatform : platforms[0];
   return (
     <>
-      <SiteSection id="home.hero"><Hero /></SiteSection>
-      <SiteSection id="home.download"><Platforms android={android} ios={ios} /></SiteSection>
-      <SiteSection id="home.features"><section className="container portal-section" id="features">
-        <div className="section-heading">
-          <div>
-            <h2>{copy("app.21580877fedc", "От заявки до отчёта")}</h2>
-            <p>{copy("app.b2a7338c8a17", "Всё, что нужно в течение смены, рядом.")}</p>
-          </div>
-          {images.length > 0 && <span className="small-note">{copy("app.bf7a7b6c958e", "На изображениях — версия для iOS")}</span>}
-        </div>
-        <div className="feature-grid">
-          {features(copy).map(([title, text, image], index) => (
-            <article className="feature-story" key={index}>
-              <h3>{title}</h3>
-              <p>{text}</p>
-              {images[index] && <div className="feature-image">
-                <img
-                  src={images[index].imageUrl}
-                  alt={images[index].altText}
-                  width="402"
-                  height="874"
-                  loading="lazy"
-                />
-              </div>}
-            </article>
-          ))}
-        </div>
-        <div className="capability-list">
-          <span>{copy("app.af6d4ea42203", "Автомобиль и топливо")}</span>
-          <span>{copy("app.081b7f707ebb", "Оборудование и серийные номера")}</span>
-          <span>{copy("app.f209fa398b11", "Выплаты и трудозатраты")}</span>
-        </div>
-      </section></SiteSection>
+      <SiteSection id="home.hero"><Hero platform={platform} onPlatformChange={setPlatform} /></SiteSection>
+      <SiteSection id="home.features"><FeaturePresentation reducedMotion={reducedMotion} platform={platform} /></SiteSection>
       <SiteSection id="home.workflow"><section className="workflow-section">
         <div className="container">
           <h2>{copy("app.2d3f8d7cb1dc", "Приложение на каждом этапе работы")}</h2>
@@ -229,14 +165,15 @@ function Home({ android, ios, reducedMotion }) {
                 copy("app.bfa80664d541", "Проверьте пробег и заправки, подготовьте дневной отчёт."),
               ],
             ].map(([title, text], index) => (
-              <article key={index}>
+              <m.article key={index} initial={reducedMotion ? false : { opacity: 0.6, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ type: "spring", stiffness: 130, damping: 22, delay: index * 0.06 }}>
                 <h3>{title}</h3>
                 <p>{text}</p>
-              </article>
+              </m.article>
             ))}
           </div>
         </div>
       </section></SiteSection>
+      <SiteSection id="home.download"><Platforms android={android} ios={ios} selected={platform} /></SiteSection>
       <SiteSection id="home.updates"><section className="container portal-section">
         <div className="section-heading">
           <h2>{copy("app.8b651b4d73e6", "Последние обновления")}</h2>
@@ -430,10 +367,12 @@ function Portal({ site }) {
               title={copy("app.40dbfea03c84", "Инженер для iPhone")}
               text={copy("app.6e47b1b5943c", "Установите приложение через SideStore. Источник и обновления доступны по прежнему адресу.")}
             />
-            <SiteSection id="ios.release"><div className="container ios-download">
-              <IOSRelease state={ios} />
-            </div></SiteSection>
-            <SiteSection id="ios.screenshots"><div className="container ios-showcase"><ProductPreview fixedPlatform="ios" /></div></SiteSection>
+            <div className="container ios-overview">
+              <SiteSection id="ios.release"><div className="ios-download">
+                <IOSRelease state={ios} />
+              </div></SiteSection>
+              <SiteSection id="ios.screenshots"><div className="ios-showcase"><ProductPreview fixedPlatform="ios" /></div></SiteSection>
+            </div>
             <SiteSection id="ios.installation"><Installation showToast={setToast} /></SiteSection>
             <SiteSection id="ios.automation"><Automation /></SiteSection>
           </>
@@ -517,7 +456,9 @@ export default function App() {
     document.addEventListener("visibilitychange", focus);
     return () => { active = false; request?.abort(); clearInterval(timer); document.removeEventListener("visibilitychange", focus); };
   }, [attempt]);
-  if (!site) return <main className="container page-intro" role="status"><p>{failed ? copy("app.d1cb17b3620b", "Не удалось загрузить сайт.") : copy("app.db491ef5033f", "Загрузка…")}</p>{failed && <button className="button button-secondary" onClick={() => setAttempt(n => n + 1)}>{copy("app.5189135a6110", "Повторить")}</button>}</main>;
-  if (!site.isEnabled) return <main className="container page-intro"><h1>{siteText(site, "app.0ef1cda5becc", "Сайт временно недоступен")}</h1><p>{site.unavailableMessage}</p></main>;
-  return <SiteContext.Provider value={site}><Portal site={site} /></SiteContext.Provider>;
+  return <AnimatePresence mode="wait">
+    {!site ? <SiteLoader key="loading" failed={failed} retry={() => { setFailed(false); setAttempt(n => n + 1); }} message={failed ? copy("app.d1cb17b3620b", "Не удалось загрузить сайт.") : copy("app.db491ef5033f", "Загрузка…")} retryLabel={copy("app.5189135a6110", "Повторить")} />
+      : !site.isEnabled ? <m.main key="disabled" className="container page-intro" initial={{ opacity: 0 }} animate={{ opacity: 1 }}><h1>{siteText(site, "app.0ef1cda5becc", "Сайт временно недоступен")}</h1><p>{site.unavailableMessage}</p></m.main>
+      : <m.div key="portal" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}><SiteContext.Provider value={site}><Portal site={site} /></SiteContext.Provider></m.div>}
+  </AnimatePresence>;
 }
