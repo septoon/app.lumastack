@@ -223,7 +223,7 @@ summary { cursor: pointer; padding-block: 16px; font-size: 15px; }
 .install-rail a { min-height: 44px; }
 .install-switch button { min-height: 48px; }
 .automation-schedule > article { padding-inline: 24px; border: 1px solid var(--line); background: var(--surface); border-radius: 16px; box-shadow: none; }
-.final-install-inner { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
+.final-install-inner { padding: 32px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
 .final-install-copy h2 { font-size: clamp(28px, 3.5vw, 44px); }
 .warning { background: #25211b; color: #dfc6a5; border: 1px solid #6e5b42; border-radius: 10px; }
 .toast { pointer-events: none; background: #d1e0ff; color: #192b48; border: 0; border-radius: 10px; font-size: 13px; }
