@@ -222,7 +222,7 @@ summary { cursor: pointer; padding-block: 16px; font-size: 15px; }
 .source-inline code { word-break: break-all; font-size: 12px; }
 .install-rail a { min-height: 44px; }
 .install-switch button { min-height: 48px; }
-.automation-schedule > article { border: 1px solid var(--line); background: var(--surface); border-radius: 16px; box-shadow: none; }
+.automation-schedule > article { padding-inline: 24px; border: 1px solid var(--line); background: var(--surface); border-radius: 16px; box-shadow: none; }
 .final-install-inner { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
 .final-install-copy h2 { font-size: clamp(28px, 3.5vw, 44px); }
 .warning { background: #25211b; color: #dfc6a5; border: 1px solid #6e5b42; border-radius: 10px; }
@@ -546,3 +546,28 @@ summary { cursor: pointer; padding-block: 16px; font-size: 15px; }
   .chapter-phone-stage { height: 380px; }
   .feature-chapter-row .chapter-copy p { max-width: none; }
 }
+
+/* One shared loading surface; release content appears once every source settles. */
+.site-loader.loader-section { min-height: 380px; padding: 36px 24px 52px; background: none; }
+.loader-section .loader-art { width: 172px; height: 172px; margin-bottom: 16px; }
+.loader-section .loader-brand { font-size: 24px; margin-bottom: 8px; }
+.loader-section .loader-message { margin-bottom: 12px; }
+.site-loader.loader-compact { min-height: 112px; padding: 12px 0 16px; background: none; flex-direction: row; justify-content: flex-start; gap: 16px; text-align: left; }
+.loader-compact .loader-art { flex: 0 0 64px; width: 64px; height: 64px; margin: 0; }
+.loader-compact .loader-core { width: 32px; height: 32px; border-radius: 10px; box-shadow: none; }
+.loader-compact .loader-core img { width: 28px; height: 28px; border-radius: 8px; }
+.loader-compact .loader-brand, .loader-compact .loader-dots { display: none; }
+.loader-compact .loader-message { margin: 0; max-width: 30ch; }
+@media (max-width: 600px) {
+  .site-loader.loader-section { min-height: 340px; padding-inline: 16px; }
+}
+
+/* Align the iOS preview surface with the adjacent release panel. */
+.ios-showcase .product-preview { padding: 24px; }
+.ios-showcase .flow-backdrop { inset: 0; border-radius: var(--radius-md); }
+.ios-showcase .preview-caption { position: absolute; top: 12px; left: 20px; z-index: 2; min-height: 24px; margin: 0; }
+.ios-showcase .preview-device { height: clamp(340px, 32vw, 440px); }
+.ios-showcase .managed-preview-copy { margin-top: 12px; min-height: 40px; }
+@media (max-width: 600px) { .ios-showcase .product-preview { padding: 20px 12px; } }
+
+@media (max-width: 600px) { .automation-schedule > article { padding-inline: 20px; } }

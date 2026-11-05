@@ -241,6 +241,8 @@ function Changelog({ android, ios }) {
   const [history, setHistory] = useState(null);
   useEffect(() => {
     const c = new AbortController();
+    let active = true;
+    const timeout = setTimeout(() => c.abort(), 15000);
     fetch("/android/history.json", { cache: "no-store", signal: c.signal })
       .then((r) => {
         if (!r.ok) throw Error();
@@ -248,11 +250,14 @@ function Changelog({ android, ios }) {
       })
       .then((rows) => {
         if (!Array.isArray(rows)) throw Error();
-        setHistory(rows.map(validateAndroidRelease));
+        const validated = rows.map(validateAndroidRelease);
+        if (active) setHistory(validated);
       })
-      .catch(() => setHistory([]));
-    return () => c.abort();
+      .catch(() => { if (active) setHistory([]); })
+      .finally(() => clearTimeout(timeout));
+    return () => { active = false; clearTimeout(timeout); c.abort(); };
   }, []);
+  const loading = ios.status === "loading" || android.status === "loading" || history === null;
   const releases = [
     ...(ios.versions || []).map((r) => ({
       ...r,
@@ -281,6 +286,7 @@ function Changelog({ android, ios }) {
         text={copy("app.42659231dbcd", "Версии и изменения из опубликованных каталогов iOS и Android.")}
       />
       <div className="container changelog">
+        {loading ? <SiteLoader variant="section" message={copy("app.db491ef5033f", "Загрузка…")} /> : <>
         <ReleaseStatus state={ios} />
         <ReleaseStatus state={android} />
         {history?.length === 0 && android.release && (
@@ -302,6 +308,7 @@ function Changelog({ android, ios }) {
             </div>
           </article>
         ))}
+        </>}
       </div>
     </>
   );

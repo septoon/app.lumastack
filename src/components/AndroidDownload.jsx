@@ -1,15 +1,15 @@
+import SiteLoader from "./SiteLoader";
 import { SiteLink, useSite } from "../SiteContent";
 import { releaseTextID } from "../siteConfig";
 import { formatDate, formatSize } from "../releases";
 export function ReleaseStatus({ state }) {
   const { text: copy } = useSite();
   if (state.status === "ready") return null;
+  if (state.status === "loading") return <SiteLoader variant="compact" message={copy("androiddownload.b06faf8a5739", "Проверяем доступность релиза…")} />;
   return (
     <div className="release-status" role="status">
       <p>
-        {state.status === "loading"
-          ? copy("androiddownload.b06faf8a5739", "Проверяем доступность релиза…")
-          : state.error}
+        {state.error}
       </p>
       {state.status === "error" && (
         <button className="text-link" type="button" onClick={state.retry}>{copy("androiddownload.dc7dbeb80969", "Проверить снова")}</button>
